@@ -69,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 We have a list of news articles. To display this document on the web, we need to add annotations so that browsers can correctly interpret it. Let's start by adding some basic structure:
 
-```
+```HTML
 <div>
 	<div>
 		<div>Article Title</div>
@@ -88,7 +88,7 @@ We have a list of news articles. To display this document on the web, we need to
 
 OK, we've laid out a basic structure for this document. This would certainly work, but to be used in the real world it needs additional context. We can start by adding some classes to these divs:
 
-```
+```HTML
 <div class="news-articles">
 	<div class="news-article">
 		<div class="news-article-title">Article Title</div>
@@ -107,7 +107,7 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 
 This is pretty good, but there is still some missing information. For example, we now know the containing div element has news articles in it, but we haven't given it any context within the larger HTML document. We can use HTML5 semantic tags to add that context to all elements:
 
-```
+```HTML
 <section class="news-articles">
 	<article class="news-article">
 		<h1 class="news-article-title">Article Title</h1>
@@ -126,7 +126,7 @@ This is pretty good, but there is still some missing information. For example, w
 
 This is getting better. Some developers might choose to stop and move on at this point, but that's not the SymbioCSS way. Notice how there is a great deal of repetition here? It is causing the HTML to be quite cluttered and hard to read. Let's remove all the duplicate information:
 
-```
+```HTML
 <section class="news">
 	<article>
 		<h1>Article Title</h1>
@@ -159,7 +159,7 @@ There are a few other things to notice here:
 
 Now, we want to add some styling. Let's go to the CSS:
 
-```
+```CSS
 .news {
 	margin-bottom: 1em;
 }
@@ -187,7 +187,7 @@ There are several things to notice here:
 
 Now, let's imagine that previously in our CSS we have applied some styling rules to some of these elements in a global context:
 
-```
+```CSS
 h1 {
 	font-weight: bold;
 }
@@ -208,7 +208,7 @@ section {
 
 This allows us to take advantage of the cascade. Once we've established a context for the elements we have used, we **only need to add styles that are specific to that context.** Let's expand upon this by adding some different types of news:
 
-```
+```HTML
 <section class="sports news">
 	<article>
 		<h1>Article Title</h1>
@@ -226,7 +226,7 @@ This allows us to take advantage of the cascade. Once we've established a contex
     </article>
 </section>
 ```
-```
+```CSS
 h1 {
 	font-weight: bold;
 }
@@ -255,7 +255,7 @@ section {
 
 Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article, we've added it to the parent container, which allows that context to cascade to all elements inside it. If we wanted to add some special styling to "world news articles," for example, we'd write our CSS in just that way:
 
-```
+```CSS
 .world.news article {
 	font-family: "Wingdings";
 }
@@ -272,7 +272,7 @@ From here, it is a simple matter to tweak individual news articles by adding mod
 
 At this point you might be thinking "What if I have some global utility classes I want to use? Won't these specific selectors overwrite them?" The answer is yes, so enter the red-headed stepchild of CSS:
 
-```
+```CSS
 .hidden {
 	display: none !important;
     visibility: hidden !important;
@@ -282,7 +282,7 @@ At this point you might be thinking "What if I have some global utility classes 
 
 By adding `!important` to your global modifiers you can rest assured their style rules will override any others. Modifiers can be scoped either globally or locally. For example:
 
-```
+```HTML
 <article class="hidden">
     <h1>Article Title</h1>
     <p class="summary">...</p>
@@ -292,7 +292,7 @@ By adding `!important` to your global modifiers you can rest assured their style
     <p class="summary">...</p>
 </article>
 ```
-```
+```CSS
 .hidden {
 	display: none !important;
     visibility: hidden !important;
@@ -318,13 +318,13 @@ So why not use `id`s?
 
 Instead, `id`s are the perfect candidate for interfacing with JavaScript. They act as a reference to a specific DOM element, and should be named as such. For example:
 
-```
+```HTML
 <input id="first_name_input" name="first-name" type="text">
 ```
 
 The `id` fully describes exactly what the element is: an input that receives the data "first name." you can then easily target and manipulate this element with JavaScript:
 
-```
+```HTML
 document.getElementById('first_name_input')
 ```
 
@@ -332,7 +332,7 @@ It is immediately apparent what is being targeted in the JavaScript code; There 
 
 In the event more context is needed, you can still add parent context to an id in your JavaScript:
 
-```
+```JS
 document.querySelector('form.signup #first_name_input')
 ```
 
@@ -342,7 +342,7 @@ In SymbioCSS, `id`s should ALWAYS contain ALL the necessary semantic and structu
 
 This element would not need a class attrbute as it is not used for visual styling. However, it CAN be used for structural CSS, ie
 
-```
+```CSS
 #news_section_wrapper {
 	display: flex;
 }
