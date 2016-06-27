@@ -180,6 +180,7 @@ Now, we want to add some styling. Let's go to the CSS:
 ```
 
 There are several things to notice here:
+
 1. Each of these selectors reads like English. 
 2. It is entirely obvious what each selector refers to in the context of the whole document.
 3. Each element is scoped to its parent context through the use of selector chaining.
