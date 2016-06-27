@@ -262,6 +262,7 @@ Now we have two news sections, but rather than adding the "sports" or "world" co
 ```
 
 By writing CSS this way, you have accomplished a number of important feats:
+
 1. You no longer have to even think about the specificity of your selectors. It is all taken care of through namespacing.
 2. Any developer who looks at your CSS will immediately understand which DOM elements your selectors are referencing. There will be no guesswork or searching through the stylesheet for a vaguely-named selector.
 3. ALL articles share the same HTML template, but will be styled appropriately depending on which section they are added to.
