@@ -153,6 +153,7 @@ There we go; Now we have all the semantics we need without any repetition or clu
 - The summary of the news article is described as a paragraph or `p` with the added class attribute of "summary." Its parent elements provide the remaining needed context.
 
 There are a few other things to notice here:
+
 1. We did not use any `id` attributes.
 2. All class names are **semantic in the context of the user**. For example, we did not employ class names like "container" or "wrapper" because those names are meaningless to the user.
 3. We're relying on the **Parent-Child Relationship** of the individual elements to provide scope. In other words, each element is inheriting context from its parent.
