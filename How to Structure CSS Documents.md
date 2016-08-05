@@ -155,7 +155,7 @@ Here, we've "reset" the specificity order a couple times within this component. 
 	margin: 0 .618em 0 0;
     border-radius: .382em;
 }
-/* Open Close Context Level 1 */
+/* Close Context Level 1 */
 
 /* Open Context Level 2a: "Danger Button" */
 .danger.button {
