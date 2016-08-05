@@ -55,7 +55,7 @@ That's where SymbioCSS comes in; it applies common patterns to HTML and CSS that
 ### HTML:
 HTML should be clean and free of unnecessary containers and semantics.
 
-Remember, HTML is meant to annotate content with necessary and appropriate context. It is NOT meant to provide easy "hooks" for CSS or JavaScript. The days of seeing HTML like `<div class="div">` are past.
+Remember, HTML is meant to annotate content with necessary and appropriate context. It is NOT meant to provide easy "hooks" for CSS or JavaScript. The days of seeing HTML like `<div class="div">` are (or at least should be) past.
 
 Let's take an example. Consider this basic document:
 
