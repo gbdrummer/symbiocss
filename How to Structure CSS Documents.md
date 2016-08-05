@@ -147,17 +147,17 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 Here, we've "reset" the specificity order a couple times within this component. That is because it makes sense to consider "danger buttons" and "safety buttons" as self-contained components. They are extensions of the main "button" component, and so they receive styles from it, but they then extend that component with their own styles. Therefore, "danger" and "safety" buttons do not share styles with each other, but they do both share styles with the "button" component. By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
 
 ```CSS
-/* Open Component Context */
+/* <Component Context> */
 
-/* Open Context Level 1: "Button" */
+/* <Context Level 1: "Button"> */
 .button {
 	display: inline;
 	margin: 0 .618em 0 0;
     border-radius: .382em;
 }
-/* Close Context Level 1 */
+/* </Context Level 1> */
 
-/* Open Context Level 2a: "Danger Button" */
+/* <Context Level 2a: "Danger Button"> */
 .danger.button {
 	background-color: red;
 }
@@ -165,9 +165,9 @@ Here, we've "reset" the specificity order a couple times within this component. 
 .danger.button:hover {
 	backround-color: pink;
 }
-/* Close Context Level 2a */
+/* </Context Level 2a> */
 
-/* Open Context Level 2b: "Safety Button" */
+/* <Context Level 2b: "Safety Button"> */
 .safety.button {
 	background-color: green;
 }
@@ -175,20 +175,23 @@ Here, we've "reset" the specificity order a couple times within this component. 
 .safety.button:hover {
 	background-color: lightgreen;
 }
-/* Close Context Level 2b */
+/* </Context Level 2b> */
 
 /* Reset all contexts */
 @media screen and (min-width: 640px) {
-	/* Open Context Level 1: "Button" */
+	/* <Context Level 1: "Button"> */
 	.button {
     	display: block;
 		margin: 0 0 .618em;
 	}
-	/* Close Context Level 1 */
+	/* </Context Level 1> */
 	
-	/* Open Additional Contexts */
+	/* <Additional Contexts /> */
 }
-/* Close Component Context */
+
+/* Additional Media Queries reset all contexts */
+
+/* </Component Context> */
 
 ```
 
