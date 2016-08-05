@@ -240,7 +240,7 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 }
 ```
 
-This creates perfect scoping of this component. It is deceptively powerful; In a larger component with additional HTML tags inside, it allows us to add many different modifiers to the top-level tag and then target elements inside based on it's context. It also allows us to freely add or remove components from our stylesheet without any conflicts whatsoever.
+This structure creates perfect internal scoping for this component. It is deceptively powerful; In a larger component with additional HTML tags inside, it allows us to add many different modifiers to the top-level tag and then target elements inside based on it's context. It also allows us to freely add or remove components from our stylesheet without any conflicts whatsoever.
 
 
 
