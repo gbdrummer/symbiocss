@@ -221,7 +221,7 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 		background-color: red;
 		
 		&:hover {
-			backround-color: pink;
+			background-color: pink;
 		}
 	}
 	
