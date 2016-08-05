@@ -109,7 +109,7 @@ Let's add a hover state to the button:
 
 ```
 
-The pseudo-class declaration goes after the mobile-first styles, but before the media query. This way, if want to adjust the hover style at larger screen sizes, we can do so inside the media query, and the cascade will ensure the change is applied.
+The pseudo-class declaration goes after the mobile-first styles, but before the media query. This way, if we want to adjust the hover style at larger screen sizes, we can do so inside the media query, and the cascade will ensure the change is applied.
 
 Let's also say we have two versions of this button, a "danger" button and a "safety" button. We can add a modifier class to accomplish this:
 
