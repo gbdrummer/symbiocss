@@ -3,9 +3,9 @@
 
 For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
 
-### Creating a Stylesheet
 Modern UIs call for componentization; Small, encapsulated units of functionality and style that can be used and reused anywhere in your document. In order for these components to work reliably, any HTML, CSS, or JavaScript contained therein needs to be scoped to that component without leaking into the surrounding DOM. HTML and JavaScript can be scoped fairly easily, as can CSS if included inline, but if being loaded from a separate stylesheet more care is necessary.
 
+### Creating a Stylesheet
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
 Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of ITCSS and deserves to be considered best practice when following a modern approach to CSS.
