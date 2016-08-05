@@ -172,7 +172,7 @@ Here, we've "reset" the specificity order a couple times within this component. 
 		}
 		
 		.danger.button:hover {
-			backround-color: pink;
+			background-color: pink;
 		}
 	</Context Level 2a>
 	
