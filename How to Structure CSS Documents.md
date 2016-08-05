@@ -92,10 +92,11 @@ Let's add a hover state to the button:
 	display: inline;
 	margin: 0 .618em 0 0;
 	background-color: red;
-    border-radius: .382em;
+	border-radius: .382em;
 }
 
 .button:hover {
+	font-weight: bold;
 	background-color: pink;
 }
 
@@ -117,6 +118,10 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 	display: inline;
 	margin: 0 .618em 0 0;
     border-radius: .382em;
+}
+
+.button:hover {
+	font-weight: bold;
 }
 
 .danger.button {
@@ -153,7 +158,11 @@ Here, we've "reset" the specificity order a couple times within this component. 
 .button {
 	display: inline;
 	margin: 0 .618em 0 0;
-    border-radius: .382em;
+	border-radius: .382em;
+}
+
+.button:hover {
+	font-weight: bold;
 }
 /* </Context Level 1> */
 
@@ -201,28 +210,32 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 .button {
 	display: inline;
 	margin: 0 .618em 0 0;
-    border-radius: .382em;
+	border-radius: .382em;
 	
-    &.danger {
-    	background-color: red;
+	&:hover {
+		font-weight: bold;
+	}
+	
+	&.danger {
+		background-color: red;
 		
-        &:hover {
-        	backround-color: pink;
-        }
-    }
+		&:hover {
+			backround-color: pink;
+		}
+	}
 	
-    &.safety {
-    	background-color: green;
+	&.safety {
+		background-color: green;
 
-        &:hover {
-            background-color: lightgreen;
-        }
-    }
+		&:hover {
+			background-color: lightgreen;
+		}
+	}
 	
-    @media screen and (min-width: 640px) {
-        display: block;
-        margin: 0 0 .618em;
-    }
+	@media screen and (min-width: 640px) {
+		display: block;
+		margin: 0 0 .618em;
+	}
 }
 ```
 
