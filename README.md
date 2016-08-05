@@ -24,19 +24,23 @@ HTML stands for "Hyper Text Markup Language." We all know what it is used for: s
 
 HTML is a markup language, or "a system for annotating a document in a way that is *syntactically distinguishable* from its content." This means it allows you to "mark up" your content, adding meaning and context, without polluting the content itself.
 
-HTML is specifically applied to writing web documents. It is important to remember that **when writing HTML, what you are actually doing is annotating content to add meaningful context.**
+HTML is specifically applied to writing web documents. 
+
+**TL;DR:** When writing HTML, what you are actually doing is annotating content to add meaningful context.
 
 ### What CSS actually is
 CSS stands for "Cascading Style Sheets." We all know what it is used for: styling web pages. But what *is* CSS?
 
 CSS is a style sheet language, or "a language that expresses the presentation of structured documents."
 
-CSS is specifically applied to documents written in a markup language. It is important to remember that **when writing CSS, the whole point is to describe document presentation separately from document content.**
+CSS is specifically applied to documents written in a markup language. 
+
+**TL;DR:** When writing CSS, the whole point is to describe document presentation separately from document content.
 
 ### What JavaScript actually is
 JavaScript is a complete programming language. In the context of building a user interface for the web, it is used to add client-side behavior to HTML pages.
 
-It is important to remember that **JavaScript is not intended to replace or mimic the functions of HTML or CSS.**
+**TL;DR:** JavaScript is not intended to replace or mimic the functions of HTML or CSS.
 
 
 ## Creating symbiosis
