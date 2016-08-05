@@ -40,7 +40,7 @@ CSS is specifically applied to documents written in a markup language.
 ### What JavaScript actually is
 JavaScript is a complete programming language. In the context of building a user interface for the web, it is used to add client-side behavior to HTML pages.
 
-**TL;DR: JavaScript is not intended to replace or mimic the functions of HTML or CSS.**
+**TL;DR: JavaScript is used to add client-side behavior, and is NOT intended to replace or mimic the functions of HTML or CSS.**
 
 
 ## Creating symbiosis
