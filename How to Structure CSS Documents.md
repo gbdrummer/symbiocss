@@ -129,7 +129,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 }
 
 .danger.button:hover {
-	backround-color: pink;
+	background-color: pink;
 }
 
 .safety.button {
