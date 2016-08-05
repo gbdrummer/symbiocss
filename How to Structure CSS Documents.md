@@ -32,18 +32,18 @@ in other words, your stylesheet will look something like this:
 
 /* Component-specific styles */
 /* Component 1 Context */
-.component-1 {}
+.component-1 {...}
 
-.component-1 .sub-component {}
+.component-1 .sub-component {...}
 
-.component-1.modifier .sub-component {}
+.component-1.modifier .sub-component {...}
 
 /* Compoonent 2 Context */
-.component-2 {}
+.component-2 {...}
 
-.component-2 .sub-component {}
+.component-2 .sub-component {...}
 
-.component-2.modifier .sub-component {}
+.component-2.modifier .sub-component {...}
 
 ```
 
