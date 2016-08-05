@@ -83,7 +83,7 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 ```
 
-This is a basic mobile-first approach, we specify default rules for the component at small screen sizes, then use a media query to add overrides for larger screen sizes.
+This is a basic mobile-first approach; we specify default rules for the component at small screen sizes, then use a media query to add overrides for larger screen sizes.
 
 Let's add a hover state to the button:
 
@@ -144,7 +144,53 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```
 
-Here, we've "reset" the specificity order a couple times within this component. That is because it makes sense to consider "danger buttons" and "safety buttons" as self-contained components. They are extensions of the main "button" component, and so they receive styles from it, but they then extend that component with their own styles. Therefore, "danger" and "safety" buttons do not share styles with each other, but they do both share styles with the "button" component.
+Here, we've "reset" the specificity order a couple times within this component. That is because it makes sense to consider "danger buttons" and "safety buttons" as self-contained components. They are extensions of the main "button" component, and so they receive styles from it, but they then extend that component with their own styles. Therefore, "danger" and "safety" buttons do not share styles with each other, but they do both share styles with the "button" component. By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
+
+```CSS
+/* Open Component Context */
+
+/* Open Context Level 1: "Button" */
+.button {
+	display: inline;
+	margin: 0 .618em 0 0;
+    border-radius: .382em;
+}
+/* Open Close Context Level 1 */
+
+/* Open Context Level 2a: "Danger Button" */
+.danger.button {
+	background-color: red;
+}
+
+.danger.button:hover {
+	backround-color: pink;
+}
+/* Close Context Level 2a */
+
+/* Open Context Level 2b: "Safety Button" */
+.safety.button {
+	background-color: green;
+}
+
+.safety.button:hover {
+	background-color: lightgreen;
+}
+/* Close Context Level 2b */
+
+/* Reset all contexts */
+@media screen and (min-width: 640px) {
+	/* Open Context Level 1: "Button" */
+	.button {
+    	display: block;
+		margin: 0 0 .618em;
+	}
+	/* Close Context Level 1 */
+	
+	/* Open Additional Contexts */
+}
+/* Close Component Context */
+
+```
 
 This structure also readily applies to CSS preprocessors that allow for nesting of selectors. For example, an SCSS implementation of this component would look like this:
 
