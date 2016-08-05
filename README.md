@@ -60,6 +60,8 @@ Remember, HTML is meant to annotate content with necessary and appropriate conte
 Let's take an example. Consider this basic document:
 
 ---
+### News
+
 #### Article Title
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -75,14 +77,15 @@ We have a list of news articles. To display this document on the web, we need to
 
 ```HTML
 <div>
+	<div>News</div>
 	<div>
 		<div>Article Title</div>
 		<div>...</div>
-    </div>
+	</div>
 	<div>
 		<div>Article Title</div>
 		<div>...</div>
-    </div>
+	</div>
 	<div>
 		<div>Article Title</div>
 		<div>...</div>
@@ -94,6 +97,7 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 
 ```HTML
 <div class="news-articles">
+	<div class="news-title">News</div>
 	<div class="news-article">
 		<div class="news-article-title">Article Title</div>
 		<div class="news-article-summary">...</div>
@@ -113,14 +117,15 @@ This is pretty good, but there is still some missing information. For example, w
 
 ```HTML
 <section class="news-articles">
+	<h1 class="news-title">News</h1>
 	<article class="news-article">
 		<h1 class="news-article-title">Article Title</h1>
 		<p class="news-article-summary">...</p>
-    </article>
+	</article>
 	<article class="news-article">
 		<h1 class="news-article-title">Article Title</h1>
 		<p class="news-article-summary">...</p>
-    </article>
+	</article>
 	<article class="news-article">
 		<h1 class="news-article-title">Article Title</h1>
 		<p class="news-article-summary">...</p>
@@ -128,18 +133,19 @@ This is pretty good, but there is still some missing information. For example, w
 </section>
 ```
 
-This is getting better. Some developers might choose to stop and move on at this point, but that's not the SymbioCSS way. Notice how there is a great deal of repetition here? It is causing the HTML to be quite cluttered and hard to read. Let's remove all the duplicate information:
+This is getting better. Some developers might choose to stop and move on at this point, but that's not the SymbioCSS way. Notice how there is a great deal of repetition here? It is causing the HTML to be quite cluttered and hard to read. Let's remove all the redundant information:
 
 ```HTML
 <section class="news">
+	<h1>News</h1>
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
-    </article>
+	</article>
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
-    </article>
+	</article>
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
@@ -150,9 +156,11 @@ There we go; Now we have all the semantics we need without any repetition or clu
 
 - We know that this block of code represents a `section` of our document, and we know that `section` relates to "news" thanks to the class attribute we added.
 
+- We know the first-child `h1` represents the title of this `section` (since that is the purpose of the `h1` tag)
+
 - Inside, we have `article` tags. We know they represent news articles because they are inside `section.news`. 
 
-- We know the `h1` inside each `article` represents the title of the article (that is the purpose of the `h1` tag), and we know it is the title of a news article because it is inside an `article` tag. 
+- We know the `h1` inside each `article` represents the title of the article, and we know it is the title of a news article because it is inside an `article` tag. 
 
 - The summary of the news article is described as a paragraph or `p` with the added class attribute of "summary." Its parent elements provide the remaining needed context.
 
@@ -171,7 +179,7 @@ Now, we want to add some styling. Let's go to the CSS:
 
 .news article {
 	border: 1px solid black;
-    padding: 1em;
+	padding: 1em;
 }
 
 .news article h1 {
@@ -204,7 +212,7 @@ section {
 
 .news article {
 	border: 1px solid black;
-    padding: 1em;
+	padding: 1em;
 }
 
 .news article .summary {
@@ -219,13 +227,13 @@ This allows us to take advantage of the cascade. Once we've established a contex
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
-    </article>
+	</article>
 </section>
 <section class="world news">
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
-    </article>
+	</article>
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
@@ -282,7 +290,7 @@ At this point you might be thinking "What if I have some global utility classes 
 ```CSS
 .hidden {
 	display: none !important;
-    visibility: hidden !important;
+	visibility: hidden !important;
 	opacity: 0 !important;
 }
 ```
@@ -291,25 +299,25 @@ By adding `!important` to your global modifiers you can rest assured their style
 
 ```HTML
 <article class="hidden">
-    <h1>Article Title</h1>
-    <p class="summary">...</p>
+	<h1>Article Title</h1>
+	<p class="summary">...</p>
 </article>
 <article class="alert">
-    <h1>Article Title</h1>
-    <p class="summary">...</p>
+	<h1>Article Title</h1>
+	<p class="summary">...</p>
 </article>
 ```
 ```CSS
 .hidden {
 	display: none !important;
-    visibility: hidden !important;
+	visibility: hidden !important;
 	opacity: 0 !important;
 }
 
 .news article.alert {
 	background: red;
-    color: green;
-    text-decoration: blink;
+	color: green;
+	text-decoration: blink;
 }
 ```
 Global modifiers have `!important` flags on each rule, while local modifiers do not. Note that apart from special circumstances, this is the only case where the `!important` flag should be used.
