@@ -62,7 +62,7 @@ For example, consider this basic component:
 </a>
 ```
 
-Our design specifies that this basic button should display inline with other buttons at viewport widths above our "UI switch point" (the point at which our layout switches between a small-screen version and a larger-screen version) and should fill the full width of the layout on smaller viewports.
+Our hypothetical design specifies that this basic button should display inline with other buttons at viewport widths above our "UI switch point" (the point at which our layout switches between a small-screen version and a larger-screen version) and should fill the full width of the layout on smaller viewports.
 
 To accomplish this, the ideal way of structuring the CSS would be as follows:
 
