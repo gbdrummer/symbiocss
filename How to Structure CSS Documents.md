@@ -154,51 +154,51 @@ Here, we've "reset" the specificity order a couple times within this component. 
 ```CSS
 /* <Component Context> */
 
-/* <Context Level 1: "Button"> */
-.button {
-	display: inline;
-	margin: 0 .618em 0 0;
-	border-radius: .382em;
-}
-
-.button:hover {
-	font-weight: bold;
-}
-/* </Context Level 1> */
-
-/* <Context Level 2a: "Danger Button"> */
-.danger.button {
-	background-color: red;
-}
-
-.danger.button:hover {
-	backround-color: pink;
-}
-/* </Context Level 2a> */
-
-/* <Context Level 2b: "Safety Button"> */
-.safety.button {
-	background-color: green;
-}
-
-.safety.button:hover {
-	background-color: lightgreen;
-}
-/* </Context Level 2b> */
-
-/* Reset all contexts */
-@media screen and (min-width: 640px) {
 	/* <Context Level 1: "Button"> */
-	.button {
-    	display: block;
-		margin: 0 0 .618em;
-	}
+		.button {
+			display: inline;
+			margin: 0 .618em 0 0;
+			border-radius: .382em;
+		}
+	
+		.button:hover {
+			font-weight: bold;
+		}
 	/* </Context Level 1> */
 	
-	/* <Additional Contexts /> */
-}
-
-/* Additional Media Queries reset all contexts */
+	/* <Context Level 2a: "Danger Button"> */
+		.danger.button {
+			background-color: red;
+		}
+		
+		.danger.button:hover {
+			backround-color: pink;
+		}
+	/* </Context Level 2a> */
+	
+	/* <Context Level 2b: "Safety Button"> */
+		.safety.button {
+			background-color: green;
+		}
+		
+		.safety.button:hover {
+			background-color: lightgreen;
+		}
+	/* </Context Level 2b> */
+	
+	/* Reset all contexts */
+	@media screen and (min-width: 640px) {
+		/* <Context Level 1: "Button"> */
+			.button {
+		    	display: block;
+				margin: 0 0 .618em;
+			}
+		/* </Context Level 1> */
+		
+		/* <Additional Contexts /> */
+	}
+	
+	/* Additional Media Queries reset all contexts */
 
 /* </Component Context> */
 
