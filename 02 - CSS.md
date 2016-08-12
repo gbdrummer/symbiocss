@@ -1,4 +1,4 @@
-[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](03 - Interfacing with JavaScript.md)
 
 ---
 # CSS
@@ -145,4 +145,4 @@ By writing CSS this way, you have accomplished a number of important feats:
 3. ALL articles share the same HTML template, but will be styled appropriately depending on which section they are added to.
 
 ---
-[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](03 - Interfacing with JavaScript.md)
