@@ -14,7 +14,7 @@ or this:
 document.getElementById('news_articles');
 ```
 
-In the first scenario, it is not at all clear what is being targeted or why. This selector could refer to anything at all, and if another developer needs to work on this in the future, they will probably spend some time scratching their head.
+In the first scenario, it is not at all clear what is being targeted or why. "content_wrapper" could refer to a lot of things, and if another developer needs to work on this in the future, they will probably spend some time scratching their head.
 
 The second scenario is much better. It is clear which element of the UI is being interacted with, and that will save time and headaches going forward.
 
