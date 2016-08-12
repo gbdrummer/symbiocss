@@ -58,8 +58,8 @@ Next, let's think about what states we need. Let's say our design spec calls for
 
 ```HTML
 <button class="save [successful] [failed]">
-	<img class="fail icon" src="icons/save-failed.svg" />
-    <img class="success icon" src="icons/save-successful.svg" />
+	<img class="fail icon" src="icons/warning.svg" />
+    <img class="success icon" src="icons/checkmark.svg" />
 	Save
 </button>
 ```
@@ -95,8 +95,8 @@ Now let's say we want to create a variation of this component. There may be time
 
 ```HTML
 <button class="[fancy] save [successful] [failed]">
-	<img class="fail icon" src="icons/save-failed.svg" />
-    <img class="success icon" src="icons/save-successful.svg" />
+	<img class="fail icon" src="icons/warning.svg" />
+    <img class="success icon" src="icons/checkmark.svg" />
 	Save
 </button>
 ```
@@ -113,8 +113,8 @@ The final HTML/CSS for this component looks like this:
 
 ```HTML
 <button class="[fancy] save [successful] [failed]">
-	<img class="fail icon" src="icons/save-failed.svg" />
-    <img class="success icon" src="icons/save-successful.svg" />
+	<img class="fail icon" src="icons/warning.svg" />
+    <img class="success icon" src="icons/checkmark.svg" />
 	Save
 </button>
 ```
