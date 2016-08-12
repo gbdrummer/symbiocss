@@ -1,4 +1,4 @@
-[<< Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next >>](/)
+[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
 
 # Introduction
 
