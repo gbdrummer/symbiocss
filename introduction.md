@@ -2,7 +2,7 @@
 
 # Introduction
 
-SymbioCSS is an approach to writing HTML and CSS in a way that maintains separation of concerns while providing for symbiosis between the two technologies. It applies common patterns that allow for better organization and maintainability of User Interfaces.
+SymbioCSS is an approach to writing HTML and CSS in a way that maintains separation of concerns (SOC) while providing for symbiosis between the two technologies. It applies common patterns that allow for better organization and maintainability of User Interfaces.
 
 The key advantages of this approach:
 
