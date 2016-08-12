@@ -1,4 +1,5 @@
 [&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+---
 
 # Introduction
 
@@ -46,4 +47,5 @@ There are numerous popular approaches to writing CSS, all of which have merit. H
 
 That's where SymbioCSS comes in; it applies common patterns to HTML and CSS that solve many of the maintenance issues UI developers typically run into, and it does so by using the inherent functionality of HTML and CSS.
 
+---
 [Next &raquo;](/)
