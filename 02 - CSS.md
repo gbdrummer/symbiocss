@@ -5,7 +5,7 @@
 
 CSS is an oft-misunderstood and oft-misused technology. As a developer it is common to find yourself in a situation where you are working on CSS written by another developer. Most of the time, that developer's aproach to naming convention and CSS structure is quite different from yours, and if he/she was a particularly lazy developer, there may be layers of hacks and overrides to compete with as you add to the stylesheet. 
 
-Thankfully, SymbioCSS offers a way of writing CSS that brings clarity to this whole picture. SymbioCSS stiplates that CSS should:
+Thankfully, SymbioCSS offers a way of writing CSS that brings clarity to this whole picture. It stipulates that CSS should:
 
 1. use contextual selectors.
 2. use selectors should read like plain English
