@@ -3,12 +3,24 @@
 ---
 # Interfacing with JavaScript
 
-### Where are all the `id`s?
-If you are thinking "this looks an awful lot like BEM but less efficient," you are absolutely correct. This approach is not as efficient to parse as BEM due to the chained CSS selectors. 
+Cluttered HTML and indecipherable CSS are bad enough as it is, but throw JavaScript into the mix and a bad situation becomes worse. If you need to target an HTML node in your JavaScript, which scenario would you prefer to see:
 
-However, it is entirely worth the added readability and maintainability of your code, especially if you are working with a large team. There is no specific syntax to learn, and besides, the amount of additional processing overhead required to parse the extra selectors is offset by the need for fewer selectors and declarations within. In fact, **this is how CSS was designed to work in the first place.**
+This:
+```js
+document.getElementById('content_wrapper');
+```
+or this:
+```js
+document.getElementById('news_articles');
+```
 
-So why not use `id`s?
+In the first scenario, it is not at all clear what is being targeted or why. This selector could refer to anything at all, and if another developer needs to work on this in the future, they will probably spend some time scratching their head.
+
+The second scenario is much better. It is clear which element of the UI is being interacted with, and that will save time and headaches going forward.
+
+---
+
+**If you've been following our News Articles example, you may be wondering "where are all the id's?"**
 
 `id`s have a place in SymbioCSS, but not for styling. `id`s are meant to provide direct access to a specific DOM element. To accomplish this, they are granted a much higher degree of specificity than class or tag selectors, and as a result they can cause a lot of specificity problems. Using an `id` anywhere in the DOM for styling reintroduces the problem of specificity to the developer and will likely break the namespacing and readability of your selectors. It is much easier to simply avoid using them for styling.
 
