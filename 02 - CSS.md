@@ -12,7 +12,9 @@ Thankfully, SymbioCSS offers a way of writing CSS that brings clarity to this wh
 3. use naming conventions that contain the semantics necessary to define the element **in the context of the user**.
 4. never reuse style rules arbitrarily; repetition of a style rule is OK if being applied to unrelated elements.
 
-Let's add some styling to our previous example. If you recall, we ended up with this HTML for our News widget:
+## For example
+
+In our previous example, we ended up with this HTML for our News widget:
 
 ```HTML
 <section class="news">
@@ -31,6 +33,8 @@ Let's add some styling to our previous example. If you recall, we ended up with 
     </article>
 </section>
 ```
+
+Let's add some basic styling:
 
 ```CSS
 .news {
