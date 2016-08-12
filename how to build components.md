@@ -91,7 +91,7 @@ button.save.failed .fail.icon {
 
 Now, all we have to do to change the state of this button is add classes "successful" or "failed". The CSS cascade takes care of the rest.
 
-Now let's say we want to create a variation of this component. There may be times when Saving is disabled in our app, so let's create a local modifier for that:
+Now let's say we want to create a variation of this component. Let's add a "fancy" local modifier:
 
 ```HTML
 <button class="[fancy] save [successful] [failed]">
