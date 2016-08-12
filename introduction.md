@@ -16,7 +16,7 @@ The key advantages of this approach:
 - Modular and Scalable architecture
 
 ## Separation of concerns
-When building user interfaces, it is vitally important that we understand the intention and limitations of the tools we are using.  The tools of choice for writing user interfaces for the web are HTML, CSS and JavaScript.
+When building user interfaces, it is vitally important that we understand the intention and limitations of the tools we are using.  The tools of choice for writing user interfaces for the web are HTML, CSS and JavaScript. **These technologies will hereafter be referred to as "The Big 3."**
 
 ### What HTML actually is
 HTML stands for "Hyper Text Markup Language." We all know what it is used for: structuring web pages. But what *is* HTML?
@@ -40,8 +40,10 @@ JavaScript is a [Turing Complete](https://en.wikipedia.org/wiki/Turing_completen
 ## Creating symbiosis
 **Symbiosis**: any interdependent or mutually beneficial relationship between two persons, groups, or web technologies (That last bit was added by us)
 
-Maintaining separation of concerns is not just a dogma; it is necessary to allow each of The Big Three to work as intended. That said, none of The Big Three operate in a vacuum; they must work together, and they must do so in a *symbiotic* way.
+Maintaining SOC is not just a dogma; it is necessary to allow each of The Big 3 to work as intended. That said, none of The Big 3 operate in a vacuum; they must work together, and they must do so in a *symbiotic* way.
 
-There are numerous popular approaches to writing CSS, all of which have merit. However, none represent a cohesive approach to using The Big Three together in a way that minimizes friction. Some strip bulk from CSS and add it to HTML, some do the opposite. All introduce hard syntactic rules that require time and training to master. All target a particular demon, be it "bloat," "disorganization," or "repetition", to the exclusion of others.
+There are numerous popular approaches to writing CSS, all of which have merit. However, none represent a cohesive approach to using The Big 3 together in a way that minimizes friction. Some strip bulk from CSS and add it to HTML, some do the opposite. Most introduce hard syntactic rules that require time and training to master. All target a particular demon, be it "bloat," "disorganization," or "repetition", often to the exclusion of others.
 
 That's where SymbioCSS comes in; it applies common patterns to HTML and CSS that solve many of the maintenance issues UI developers typically run into, and it does so by using the inherent functionality of HTML and CSS.
+
+[Next &raquo;](/)
