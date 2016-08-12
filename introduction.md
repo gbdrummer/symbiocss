@@ -33,7 +33,7 @@ CSS is a style sheet language, or "a language that expresses the presentation of
 **tl;dr When writing CSS, the whole point is to describe document presentation separately from document content.**
 
 ### What JavaScript actually is
-JavaScript is a [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness) programming language. In the context of building a user interface for the web, it is used to add client-side behavior to HTML pages.
+JavaScript is a [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness) programming language. In the context of building a User Interface for the web, it is used to add client-side behavior to HTML pages.
 
 **JavaScript is NOT intended to replace or mimic the functions of HTML or CSS.**
 
