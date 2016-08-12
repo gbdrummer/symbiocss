@@ -130,7 +130,7 @@ section {
 }
 ```
 
-Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article, we've added it to the parent container, which allows that context to cascade to all elements inside it. If we wanted to add some special styling to "world news articles," for example, we'd write our CSS in just that way:
+Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article, we've added it to the parent container, which allows that context to cascade to all its child elements. If we wanted to add some special styling to "world news articles," for example, we'd write our CSS in just that way:
 
 ```CSS
 .world.news article {
