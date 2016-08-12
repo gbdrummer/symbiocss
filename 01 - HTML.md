@@ -1,4 +1,4 @@
-[&laquo; Previous](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](02 - CSS.md)
 
 ---
 
@@ -128,4 +128,4 @@ There are a few other things to notice here:
 3. We're relying on the **Parent-Child Relationship** of the individual elements to provide scope. In other words, each element is inheriting context from its parent.
 
 ---
-[&laquo; Previous](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](02 - CSS.md)
