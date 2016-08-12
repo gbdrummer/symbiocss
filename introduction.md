@@ -6,9 +6,7 @@ SymbioCSS is an approach to writing HTML and CSS in a way that maintains separat
 
 The key advantages of this approach:
 
-- Maintains separation of concerns (HTML: Document Structure, CSS: Presentation & Style, JS: Behavior & Interaction)
-- Creates symbiosis amongst these three technologies by applying the same patterns to each
-- Makes CSS easily maintainable by any size development team, large or small:
+- Makes HTML and CSS easily maintainable by any size development team, large or small:
 	- Negates specificity conflicts
 	- Provides BEM-level namespacing without the ugly markup
 	- Produces the cleanest, most semantic HTML possible
