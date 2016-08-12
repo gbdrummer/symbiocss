@@ -61,9 +61,8 @@ There are several things to notice here:
 2. It is entirely obvious what each selector refers to in the context of the whole document.
 3. Each element is scoped to its parent context through the use of selector chaining.
 4. Just like in the HTML, there is no unnecessary repetition of semantic information, and we have not included any semantics that are not important to the context of each element.
-5. There is no structural styling (ie box-model, positioning, etc) in any of these rulesets.
 
-Now, let's imagine that previously in our CSS we have applied some styling rules to some of these elements in a global context:
+Now, let's imagine that we had previously applied some styling rules to some of these elements in a global context:
 
 ```CSS
 h1 {
