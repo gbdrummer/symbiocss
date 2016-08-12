@@ -32,7 +32,7 @@ Instead, `id`s are the perfect candidate for interfacing with JavaScript. They a
 
 The `id` fully describes exactly what the element is: an input that receives the data "first name." You can then easily target and manipulate this element with JavaScript:
 
-```HTML
+```JS
 document.getElementById('first_name_input')
 ```
 
