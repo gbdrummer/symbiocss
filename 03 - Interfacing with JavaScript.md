@@ -36,13 +36,7 @@ The `id` fully describes exactly what the element is: an input that receives the
 document.getElementById('first_name_input')
 ```
 
-It is immediately apparent what is being targeted in the JavaScript code; There is no guesswork involved because we have clearly defined the element with our `id`. 
-
-In the event more context is needed, you can still add parent context to an id in your JavaScript:
-
-```JS
-document.querySelector('form.signup #first_name_input')
-```
+---
 
 In SymbioCSS, `id`s should ALWAYS contain ALL the necessary semantic and structural information needed to clearly define the element (but not its parent context) in a single string. For example, if you need to add a wrapper to a block of HTML specifically for the purpose of targeting it with JavaScript, the `id` given to that wrapper element should indicate this:
 
