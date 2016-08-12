@@ -3,4 +3,4 @@ A symbiotic methodology for HTML/CSS development
 
 ## Table of Contents
 
-1. [Introduction](introduction.md)
+1. [Introduction](00 - Introduction.md)
