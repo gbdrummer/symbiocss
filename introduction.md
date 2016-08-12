@@ -21,20 +21,16 @@ When building user interfaces, it is vitally important that we understand the in
 ### What HTML actually is
 HTML stands for "Hyper Text Markup Language." We all know what it is used for: structuring web pages. But what *is* HTML?
 
-HTML is a markup language, or "a system for annotating a document in a way that is *syntactically distinguishable* from its content." This means it allows you to "mark up" your content, adding meaning and context, without polluting the content itself.
+HTML is a markup language, or "a system for annotating a document in a way that is *syntactically distinguishable* from its content." This means it allows you to "mark up" your content, adding meaning and context, without polluting the content itself. HTML is specifically applied to writing web documents. 
 
-HTML is specifically applied to writing web documents. 
-
-**When writing HTML, what you are actually doing is annotating content to add meaningful context.**
+**tl;dr When writing HTML, what you are actually doing is annotating content to add meaningful context.**
 
 ### What CSS actually is
 CSS stands for "Cascading Style Sheets." We all know what it is used for: styling web pages. But what *is* CSS?
 
-CSS is a style sheet language, or "a language that expresses the presentation of structured documents."
+CSS is a style sheet language, or "a language that expresses the presentation of structured documents." It includes a feature called the *Cascade*, an algorithm defining how to combine property values originating from different sources. CSS is specifically applied to documents written in a markup language.
 
-CSS is specifically applied to documents written in a markup language. 
-
-**When writing CSS, the whole point is to describe document presentation separately from document content.**
+**tl;dr When writing CSS, the whole point is to describe document presentation separately from document content.**
 
 ### What JavaScript actually is
 JavaScript is a [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness) programming language. In the context of building a user interface for the web, it is used to add client-side behavior to HTML pages.
