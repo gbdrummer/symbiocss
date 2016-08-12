@@ -1,7 +1,7 @@
-<nav style="display: flex;">
+<div style="display: flex;">
 	<a href="https://github.com/gbdrummer/symbiocss">&laquo Table of Contents</a>
 	<a href="https://github.com/gbdrummer/symbiocss" style="margin-left: auto;">Next &raquo;</a>
-</nav>
+</div>
 
 # Introduction
 
