@@ -7,14 +7,13 @@ SymbioCSS is an approach to writing HTML and CSS in a way that maintains separat
 The key advantages of this approach:
 
 - Makes HTML and CSS easily maintainable by any size development team, large or small:
-	- Negates specificity conflicts
-	- Provides BEM-level namespacing without the ugly markup
 	- Produces the cleanest, most semantic HTML possible
-	- Results in a reduced number of CSS rulesets
+	- Negates specificity conflicts
+	- Provides BEM-style namespacing without the ugly markup
 	- All CSS selectors **read like English**
-	- Lends itself to componentization
 	- Works in any browser
-
+- Designed for Componentization
+- Modular and Scalable architecture
 
 ## Separation of concerns
 When building user interfaces, it is vitally important that we understand the intention and limitations of the tools we are using.  The tools of choice for writing user interfaces for the web are HTML, CSS and JavaScript. SymbioCSS focuses on HTML and CSS and the way they interface with JavaScript. **These three technologies will hereafter be collectively referred to as "The Big Three."**
