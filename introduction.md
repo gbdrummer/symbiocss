@@ -18,8 +18,6 @@ The key advantages of this approach:
 ## Separation of concerns
 When building user interfaces, it is vitally important that we understand the intention and limitations of the tools we are using.  The tools of choice for writing user interfaces for the web are HTML, CSS and JavaScript. SymbioCSS focuses on HTML and CSS, and accounts for the way the two technologies interface with JavaScript.
 
-Some fundamentals:
-
 ### What HTML actually is
 HTML stands for "Hyper Text Markup Language." We all know what it is used for: structuring web pages. But what *is* HTML?
 
