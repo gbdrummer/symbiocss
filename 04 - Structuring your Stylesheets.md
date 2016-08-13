@@ -1,4 +1,4 @@
-# CSS Document Structure
+# Structuring your Stylesheets
 
 For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
 
