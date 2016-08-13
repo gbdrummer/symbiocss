@@ -9,7 +9,7 @@ A symbiotic methodology for HTML/CSS development
 4. [Interfacing with JavaScript](03 - Interfacing with JavaScript.md)
 
 ### Building UIs
-5. Structuring your CSS
+5. Structuring your Stylesheets
 6. Building Reusable Components
 
 ### Example Code
