@@ -1,4 +1,4 @@
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
+[&laquo; Previous](03 - Interfacing with JavaScript.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
 
 ---
 
@@ -259,4 +259,4 @@ Visual styles include anything that affects how an element is presented without 
 -->
 
 ---
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
+[&laquo; Previous](03 - Interfacing with JavaScript.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
