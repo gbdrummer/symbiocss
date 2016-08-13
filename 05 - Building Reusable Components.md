@@ -1,4 +1,4 @@
-# How to build components
+# Building Reusable Components.md
 
 When building composable components for UI, two perspectives must be considered; Internal and External Context. In other words, the developer must plan for how the internal parts of a component are presented, and for how the component itself interacts with the larger document. To cover for both perspectives, a very simple basic structure can be used:
 
