@@ -1,3 +1,7 @@
+[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
+
+---
+
 # Structuring your Stylesheets
 
 For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
@@ -254,3 +258,5 @@ Visual styles include anything that affects how an element is presented without 
 
 -->
 
+---
+[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](05 - Building Reusable Components.md)
