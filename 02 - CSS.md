@@ -144,5 +144,48 @@ By writing CSS this way, you have accomplished a number of important feats:
 2. Any developer who looks at your CSS will immediately understand which DOM elements your selectors are referencing. There will be no guesswork or searching through the stylesheet for a vaguely-named selector.
 3. ALL articles share the same HTML template, but will be styled appropriately depending on which section they are added to.
 
+## Modifiers
+
+From here, it is a simple matter to tweak individual news articles by adding modifiers: 
+
+`<article class="alert">` or `<article class="special-report">`
+
+At this point you might be thinking "What if I have some global utility classes I want to use? Won't these specific selectors overwrite them?" The answer is yes, so enter the red-headed stepchild of CSS:
+
+```CSS
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+```
+
+By adding `!important` to your global modifiers you can rest assured their style rules will override any others. Modifiers can be scoped either globally or locally. For example:
+
+```HTML
+<article class="hidden">
+	<h1>Article Title</h1>
+	<p class="summary">...</p>
+</article>
+<article class="alert">
+	<h1>Article Title</h1>
+	<p class="summary">...</p>
+</article>
+```
+```CSS
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+
+.news article.alert {
+	background: red;
+	color: green;
+	text-decoration: blink;
+}
+```
+Global modifiers have `!important` flags on each rule, while local modifiers do not. Note that apart from special circumstances, this is the only case where the `!important` flag should be used.
+
 ---
 [&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](03 - Interfacing with JavaScript.md)
