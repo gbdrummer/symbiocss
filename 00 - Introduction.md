@@ -50,3 +50,11 @@ That's where SymbioCSS comes in; it applies common patterns to HTML and CSS that
 
 ---
 [&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](01 - HTML.md)
+
+<!--
+HTML elements with descriptors like "wrapper," "green" or "col-sm-3 col-md-6 col-lg-9 cf h30 main-container__header--v2" are not particularly conducive to communication amongst a team of developers. Any team member must be trained on what each of these descriptors mean, and even then it may not be entirely obvious which UI elements these descriptors refer to.
+
+If you have seen our News Articles example and you are thinking "this looks an awful lot like BEM but less efficient," you are absolutely correct. This approach is not as efficient to parse as BEM due to the chained CSS selectors. 
+
+However, it is entirely worth the added readability and maintainability of your code, especially if you are working with a large team. There is no specific syntax to learn, and besides, the amount of additional processing overhead required to parse the extra selectors is offset by the need for fewer selectors and declarations within. In fact, **this is how CSS was designed to work in the first place.**
+-->
