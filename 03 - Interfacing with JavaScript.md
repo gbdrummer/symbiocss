@@ -3,7 +3,7 @@
 ---
 # Interfacing with JavaScript
 
-Cluttered HTML and indecipherable CSS are bad enough as it is, but throw JavaScript into the mix and a bad situation becomes worse. If you need to target an HTML node in your JavaScript, which scenario would you prefer to see:
+Cluttered HTML and indecipherable CSS are bad enough as it is, but throw JavaScript into the mix and a bad situation becomes worse. For instance, if you needed to target an HTML node in your JavaScript, which of the following two examples would you prefer to use?
 
 This:
 ```js
