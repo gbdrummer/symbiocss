@@ -1,3 +1,7 @@
+[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+
+---
+
 # Building Reusable Components.md
 
 When building composable components for UI, two perspectives must be considered; Internal and External Context. In other words, the developer must plan for how the internal parts of a component are presented, and for how the component itself interacts with the larger document. To cover for both perspectives, a very simple basic structure can be used:
@@ -162,4 +166,5 @@ button.fancy.save {
 
 This component can now be used anywhere! This structure is applicable to any form of componentization; React, Angular, Web Components, whatever you may be using, the built-in scoping of this structure will work. When you structure your entire project this way, you may be surprised at how it just simply works, with no unexpected conflicts. And you get the added benefit of HTML and CSS that are clean, semantic, and easy to understand by a large team of developers.
 
-
+---
+[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
