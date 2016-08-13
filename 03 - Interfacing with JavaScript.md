@@ -42,7 +42,7 @@ document.getElementById('first_name_input')
 
 There are occasional circumstances where it is necessary to add a wrapper to a block of HTML for layout purposes. For example, if you have a document with 5 sections on it, but you'd like to (arbitrarily) display three of them in a row with the other two above and below, it would make sense to add a flexbox wrapper around those three sections. Because the wrapper is used purely for visuals and has no contextual meaning to the user, an `id` can be used to set the wrapper's box model to "flex." 
 
-When using an id this way, it makes sense to include information in the `id` name that is out of user context as a way of diffrentiating this container from the rest of the document:
+When using an `id` this way, it makes sense to include information in the `id` name that is out of user context as a way of diffrentiating this container from the rest of the document:
 
 ```CSS
 #news_section_flex_wrapper {
@@ -52,7 +52,7 @@ When using an id this way, it makes sense to include information in the `id` nam
 
 This approach should be used whenever it becomes necessary to add DOM elements which do not have semantic context for the user, like wrapper elements. This should be avoided if at all possible, however, as it is usually possible to add all the necessary styling to elements that DO have user context.
 
- `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors! More on this later.
+ `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. More on this later.
 
 ---
 [&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
