@@ -11,7 +11,7 @@ Modern UIs call for componentization; Small, encapsulated units of functionality
 ### Creating a Stylesheet
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
-Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of ITCSS and deserves to be considered best practice when following a modern approach to CSS.
+Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of [ITCSS](http://itcss.io/) and deserves to be considered best practice when following a modern approach to CSS.
 
 However, there is an additional dimension to this when you enter the world of componentization; Since components are self-contained entities, they have a large amount of CSS that only applies to the component itself. For a UI with a large number of components, a stylesheet can start to become cluttered and difficult to follow if the ITCSS approach is followed correctly.
 
