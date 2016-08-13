@@ -1,4 +1,4 @@
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
 
 ---
 
@@ -167,4 +167,4 @@ button.fancy.save {
 This component can now be used anywhere! This structure is applicable to any form of componentization; React, Angular, Web Components, whatever you may be using, the built-in scoping of this structure will work. When you structure your entire project this way, you may be surprised at how it just simply works, with no unexpected conflicts. And you get the added benefit of HTML and CSS that are clean, semantic, and easy to understand by a large team of developers.
 
 ---
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Previous](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
