@@ -1,5 +1,4 @@
-# SymbioCSS
-## CSS Document Structure
+# CSS Document Structure
 
 For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
 
@@ -51,7 +50,7 @@ In the Component-specific styles section, notice how the specificity increases a
 
 This approach is analogous to ITCSS in that where ITCSS structures CSS in an inverted triangle, SymbioCSS structures it more like an inverted Christmas Tree. This allows you to place your component CSS anywhere you wish in your CSS file, or add/remove components at will without worrying about scope conflicts.
 
-### Creating a Component
+## Creating a Component
 There is also an ideal way to structure your Component-scoped CSS; While not absolutely necessary, it does produce the cleanest CSS possible, free of unecessary overrides, and it does so by following a simple mobile-first approach.
 
 For example, consider this basic component:
