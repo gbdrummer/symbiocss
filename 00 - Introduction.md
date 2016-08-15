@@ -40,7 +40,7 @@ JavaScript is a [Turing Complete](https://en.wikipedia.org/wiki/Turing_completen
 **JavaScript is NOT intended to replace or mimic the functions of HTML or CSS.**
 
 ## Creating symbiosis
-**Symbiosis**: any interdependent or mutually beneficial relationship between two persons, groups, or web technologies (That last bit was added by us)
+**Symbiosis**: any interdependent or mutually beneficial relationship between two persons, groups, or web technologies (That last bit was added by me).
 
 Maintaining SOC is not just a dogma; it is necessary to allow each of The Big 3 to work as intended. That said, none of The Big 3 operate in a vacuum; they must work together, and they must do so in a *symbiotic* way.
 
