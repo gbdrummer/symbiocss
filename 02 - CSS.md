@@ -7,9 +7,9 @@ CSS is an oft-misunderstood and oft-misused technology. As a developer it is com
 
 Thankfully, SymbioCSS offers a way of writing CSS that brings clarity to this whole picture. It stipulates that CSS should:
 
-1. use contextual selectors.
-2. use selectors should read like plain English
-3. use naming conventions that contain the semantics necessary to define the element **in the context of the user**.
+1. use contextual selectors,
+2. read like plain English,
+3. use naming conventions that contain the semantics necessary to define the element **in the context of the user**,
 4. never reuse style rules arbitrarily; repetition of a style rule is OK if being applied to unrelated elements.
 
 ## For example
