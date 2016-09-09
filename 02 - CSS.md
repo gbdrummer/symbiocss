@@ -173,12 +173,14 @@ By adding `!important` to your global modifiers you can rest assured their style
 </article>
 ```
 ```CSS
+/* Global Modifier */
 .hidden {
 	display: none !important;
 	visibility: hidden !important;
 	opacity: 0 !important;
 }
 
+/* Local Modifier */
 .news article.alert {
 	background: red;
 	color: green;
