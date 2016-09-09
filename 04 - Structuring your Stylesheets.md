@@ -41,12 +41,21 @@ in other words, your stylesheet will look something like this:
 
 .component-1.modifier .sub-component {...}
 
-/* Compoonent 2 Context */
+/* Component 2 Context */
 .component-2 {...}
 
 .component-2 .sub-component {...}
 
 .component-2.modifier .sub-component {...}
+
+/* Singletons */
+main {
+	display: flex;
+}
+
+#component-1_flex_wrapper {
+	display: flex;
+}
 
 ```
 
