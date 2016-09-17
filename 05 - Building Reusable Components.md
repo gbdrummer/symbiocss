@@ -184,17 +184,17 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 ```CSS
 .button {
-	display: inline;
-	margin: 0 .618em 0 0;
+	display: block;
+	margin: 0 0 .618em;
 	background-color: red;
 	border-radius: .382em;
 }
 
 @media screen and (min-width: 640px) {
 	.button {
-    	display: block;
-		margin: 0 0 .618em;
-    }
+		display: inline;
+		margin: 0 .618em 0 0;
+	}
 }
 
 ```
@@ -205,8 +205,8 @@ Let's add a hover state to the button:
 
 ```CSS
 .button {
-	display: inline;
-	margin: 0 .618em 0 0;
+	display: block;
+	margin: 0 0 .618em;
 	background-color: red;
 	border-radius: .382em;
 }
@@ -218,9 +218,9 @@ Let's add a hover state to the button:
 
 @media screen and (min-width: 640px) {
 	.button {
-    	display: block;
-		margin: 0 0 .618em;
-    }
+		display: inline;
+		margin: 0 .618em 0 0;
+	}
 }
 
 ```
@@ -231,9 +231,9 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```CSS
 .button {
-	display: inline;
-	margin: 0 .618em 0 0;
-    border-radius: .382em;
+	display: block;
+	margin: 0 0 .618em;
+	border-radius: .382em;
 }
 
 .button:hover {
@@ -258,9 +258,9 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 @media screen and (min-width: 640px) {
 	.button {
-    	display: block;
-		margin: 0 0 .618em;
-    }
+		display: inline;
+		margin: 0 .618em 0 0;
+	}
 }
 
 ```
@@ -272,8 +272,8 @@ Here, we've "reset" the specificity order a couple times within this component. 
 
 	<Context Level 1: "Button">
 		.button {
-			display: inline;
-			margin: 0 .618em 0 0;
+			display: block;
+			margin: 0 0 .618em;
 			border-radius: .382em;
 		}
 	
@@ -307,8 +307,8 @@ Here, we've "reset" the specificity order a couple times within this component. 
 	@media screen and (min-width: 640px) {
 		<Context Level 1: "Button">
 			.button {
-		    	display: block;
-				margin: 0 0 .618em;
+				display: inline;
+				margin: 0 .618em 0 0;
 			}
 		</Context Level 1>
 		
@@ -325,8 +325,8 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 
 ```SCSS
 .button {
-	display: inline;
-	margin: 0 .618em 0 0;
+	display: block;
+	margin: 0 0 .618em;
 	border-radius: .382em;
 	
 	&:hover {
@@ -350,8 +350,8 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 	}
 	
 	@media screen and (min-width: 640px) {
-		display: block;
-		margin: 0 0 .618em;
+		display: inline;
+		margin: 0 .618em 0 0;
 	}
 }
 ```
