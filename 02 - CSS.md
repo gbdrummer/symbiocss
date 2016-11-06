@@ -1,4 +1,4 @@
-[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](03 - Interfacing with JavaScript.md)
+[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](03 - Interfacing with JavaScript.md)
 
 ---
 # CSS
@@ -190,4 +190,4 @@ By adding `!important` to your global modifiers you can rest assured their style
 Global modifiers have `!important` flags on each rule, while local modifiers do not. Note that apart from special circumstances, this is the only case where the `!important` flag should be used.
 
 ---
-[&laquo; Previous](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](03 - Interfacing with JavaScript.md)
+[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](03 - Interfacing with JavaScript.md)
