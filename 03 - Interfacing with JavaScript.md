@@ -1,4 +1,4 @@
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](04 - Structuring your Stylesheets.md)
+[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](04 - Structuring your Stylesheets.md)
 
 ---
 # Interfacing with JavaScript
@@ -55,4 +55,4 @@ This approach should be used whenever it becomes necessary to add DOM elements w
  `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. More on this later.
 
 ---
-[&laquo; Previous](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](04 - Structuring your Stylesheets.md)
+[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](04 - Structuring your Stylesheets.md)
