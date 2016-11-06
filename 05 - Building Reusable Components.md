@@ -1,4 +1,4 @@
-[&laquo; Previous](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Structuring Your Stylesheets](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate - Coming Soon! &raquo;
 
 ---
 
@@ -374,4 +374,4 @@ Visual styles include anything that affects how an element is presented without 
 -->
 
 ---
-[&laquo; Previous](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](/)
+[&laquo; Structuring Your Stylesheets](04 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate - Coming Soon! &raquo;
