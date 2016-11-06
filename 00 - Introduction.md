@@ -1,4 +1,4 @@
-[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](01 - HTML.md)
+[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](01 - HTML.md)
 
 ---
 
@@ -49,7 +49,7 @@ There are numerous popular approaches to writing CSS, all of which have merit. H
 That's where SymbioCSS comes in; it applies common patterns to HTML and CSS that solve many of the maintenance issues UI developers typically run into, and it does so by using the inherent functionality of HTML and CSS.
 
 ---
-[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [Next &raquo;](01 - HTML.md)
+[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](01 - HTML.md)
 
 <!--
 HTML elements with descriptors like "wrapper," "green" or "col-sm-3 col-md-6 col-lg-9 cf h30 main-container__header--v2" are not particularly conducive to communication amongst a team of developers. Any team member must be trained on what each of these descriptors mean, and even then it may not be entirely obvious which UI elements these descriptors refer to.
