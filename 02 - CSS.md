@@ -131,7 +131,7 @@ section {
 	background: blue;
 }
 
-/* "World News" context
+/* "World News" context */
 .world.news {
 	background: green;
 }
