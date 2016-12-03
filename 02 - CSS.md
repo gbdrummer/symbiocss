@@ -94,6 +94,7 @@ This allows us to take advantage of the cascade. Once we've established a contex
 		<p class="summary">...</p>
 	</article>
 </section>
+
 <section class="world news">
 	<article>
 		<h1>Article Title</h1>
@@ -106,6 +107,7 @@ This allows us to take advantage of the cascade. Once we've established a contex
 </section>
 ```
 ```CSS
+/* Global rules */
 h1 {
 	font-weight: bold;
 }
@@ -114,14 +116,7 @@ section {
 	margin-bottom: 1em;
 }
 
-.sports.news {
-	background: blue;
-}
-
-.world.news {
-	background: green;
-}
-
+/* "News" context
 .news article {
 	border: 1px solid black;
     padding: 1em;
@@ -129,6 +124,16 @@ section {
 
 .news article .summary {
 	font-family: "Comic Sans";
+}
+
+/* "Sports News" context */
+.sports.news {
+	background: blue;
+}
+
+/* "World News" context
+.world.news {
+	background: green;
 }
 ```
 
