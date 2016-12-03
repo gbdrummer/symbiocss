@@ -1,4 +1,4 @@
-[&laquo; Interfacing with JavaScript](03 - Interfacing with JavaScript.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](05 - Building Reusable Components.md)
+[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](05 - Building Reusable Components.md)
 
 ---
 
