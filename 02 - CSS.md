@@ -197,7 +197,7 @@ By adding `!important` to your global modifiers you can rest assured their style
 	text-decoration: blink;
 }
 ```
-Global modifiers have `!important` flags on each rule, while local modifiers do not. Note that apart from special circumstances, this is the only case where the `!important` flag should be used.
+Global modifiers have `!important` flags on each rule to ensure they override all local styles, while local modifiers do not. Note that apart from special circumstances, global modifiers are the only appropriate use case for the `!important` flag.
 
 ---
 [&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](03 - Interfacing with JavaScript.md)
