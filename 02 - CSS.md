@@ -116,7 +116,7 @@ section {
 	margin-bottom: 1em;
 }
 
-/* "News" context
+/* "News" context */
 .news article {
 	border: 1px solid black;
     padding: 1em;
