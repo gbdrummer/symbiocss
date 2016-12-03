@@ -182,6 +182,7 @@ By adding `!important` to your global modifiers you can rest assured their style
 ```
 ```CSS
 /* Global Modifier */
+/* scoped to the global namespace */
 .hidden {
 	display: none !important;
 	visibility: hidden !important;
@@ -189,6 +190,7 @@ By adding `!important` to your global modifiers you can rest assured their style
 }
 
 /* Local Modifier */
+/* scoped to the element being modified through selector chaining */
 .news article.alert {
 	background: red;
 	color: green;
