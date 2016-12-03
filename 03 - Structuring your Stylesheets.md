@@ -1,4 +1,4 @@
-[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](05 - Building Reusable Components.md)
+[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04 - Building Reusable Components.md)
 
 ---
 
@@ -64,4 +64,4 @@ In the Component-specific styles section, notice how the specificity increases a
 This approach is analogous to ITCSS in that where ITCSS structures CSS in an inverted triangle, SymbioCSS structures it more like an inverted Christmas Tree. This allows you to place your component CSS anywhere you wish in your CSS file, or add/remove components at will without worrying about scope conflicts.
 
 ---
-[&laquo; Interfacing with JavaScript](03 - Interfacing with JavaScript.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](05 - Building Reusable Components.md)
+[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04 - Building Reusable Components.md)
