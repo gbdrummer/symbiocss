@@ -6,11 +6,11 @@ A symbiotic methodology for HTML/CSS development
 1. [Introduction](00 - Introduction.md)
 2. [HTML](01 - HTML.md)
 3. [CSS](02 - CSS.md)
-4. [Interfacing with JavaScript](03 - Interfacing with JavaScript.md)
 
 ### Building UIs
-5. [Structuring your Stylesheets](04 - Structuring your Stylesheets.md)
-6. [Building Reusable Components](05 - Building Reusable Components.md)
+4. [Structuring your Stylesheets](03 - Structuring your Stylesheets.md)
+5. [Building Reusable Components](04 - Building Reusable Components.md)
+6. [Interfacing with JavaScript](05 - Interfacing with JavaScript.md)
 
 ### Example Code
 7. Boilerplate
