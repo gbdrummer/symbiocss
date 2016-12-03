@@ -65,6 +65,7 @@ There are several things to notice here:
 Now, let's imagine that we had previously applied some styling rules to some of these elements in a global context:
 
 ```CSS
+/* Global rules */
 h1 {
 	font-weight: bold;
 }
@@ -73,6 +74,7 @@ section {
 	margin-bottom: 1em;
 }
 
+/* Component-scoped rules */
 .news article {
 	border: 1px solid black;
 	padding: 1em;
