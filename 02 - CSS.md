@@ -170,11 +170,12 @@ At this point you might be thinking "What if I have some global utility classes 
 By adding `!important` to your global modifiers you can rest assured their style rules will override any others. Modifiers can be scoped either globally or locally. For example:
 
 ```HTML
-<article class="hidden">
+<article class="hidden"> <!-- "hidden" is our global modifier -->
 	<h1>Article Title</h1>
 	<p class="summary">...</p>
 </article>
-<article class="alert">
+
+<article class="alert"> <!-- "alert" is our local modifier -->
 	<h1>Article Title</h1>
 	<p class="summary">...</p>
 </article>
