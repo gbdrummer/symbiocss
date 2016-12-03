@@ -85,7 +85,7 @@ section {
 }
 ```
 
-This allows us to take advantage of the cascade. Once we've established a context for the elements we have used, we **only need to add styles that are specific to that context.** Let's expand upon this by adding some different types of news:
+This allows us to take advantage of the cascade. Once we've established a context for the elements we have used, we **only need to add styles that are specific to that context.** Any global rules will still apply because we have not added any styles that will overwrite them. Let's expand upon this by adding some different types of news:
 
 ```HTML
 <section class="sports news">
@@ -137,7 +137,7 @@ section {
 }
 ```
 
-Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article, we've added it to the parent container, which allows that context to cascade to all its child elements. If we wanted to add some special styling to "world news articles," for example, we'd write our CSS in just that way:
+Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article, we've added it to the parent container, which allows the "sports" or "world" **context** to cascade to all the child elements of the respective containers. If we wanted to add some special styling to "world news articles," for example, we'd write our CSS in just that way:
 
 ```CSS
 .world.news article {
