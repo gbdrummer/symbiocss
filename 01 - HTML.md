@@ -10,19 +10,18 @@
 
 Let's take an example. Consider this basic document:
 
-<pre>
-<h1>Blog</h1>
+---
+### Blog
 
-<h2>Article 1 Title</h2>
+#### Article 1 Title
 Article 1 summary
 
-<h2>Article 2 Title</h2>
+#### Article 2 Title
 Article 2 summary
 
-<h2>Article 3 Title</h2>
+#### Article 3 Title
 Article 3 summary
-
-</pre>
+---
 
 We have a basic blog. To display this document on the web, we need to add annotations so that browsers can correctly interpret it. Let's start by adding some basic structure:
 
