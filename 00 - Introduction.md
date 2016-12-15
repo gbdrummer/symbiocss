@@ -2,6 +2,8 @@
 
 ---
 
+# Introduction
+
 SymbioCSS is a methodology for writing HTML and CSS which I have developed over the last 3 years.
 
 ## Why another methodology?
