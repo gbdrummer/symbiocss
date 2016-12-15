@@ -62,6 +62,7 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 
 Let's take an example. Consider this basic document:
 
+```
 <pre>
 ### Blog
 
@@ -75,6 +76,7 @@ Article 2 summary
 Article 3 summary
 
 </pre>
+```
 
 We have a basic blog. To display this document on the web, we need to add annotations so that browsers can correctly interpret it. Let's start by adding some basic structure:
 
