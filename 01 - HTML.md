@@ -94,7 +94,7 @@ Now, when we look at this HTML we understand that we have a blog, which is a sec
 
 1. We've used HTML5 semantic tags to add most of the context we needed (see HTML Rule #1 above),
 2. we used `class` attributes to add the remaining context (see HTML Rule #2 above), and
-3. we did not repeat any of this context inside our blog container as we might with a class-naming convention such as B.E.M., which would stipulate that "blog" be prepended to the articles and "summary" class, ie `.blog__article` and `.blog__article__summary`. (see HTML Rule #3 above).
+3. we did not repeat any of this context inside our blog container as we might with a class-naming convention such as B.E.M., which would stipulate that "blog" be prepended to the articles and "summary" class, ie `<article class="blog__article">` and `<p class="blog__article__summary">`. (see HTML Rule #3 above).
 
 Next, [let's add some style to our blog](02 - CSS.md).
 
