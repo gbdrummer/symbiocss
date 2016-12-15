@@ -21,6 +21,7 @@ Article 2 summary
 
 #### Article 3 Title
 Article 3 summary
+
 ---
 
 We have a basic blog. To display this document on the web, we need to add annotations so that browsers can correctly interpret it. Let's start by adding some basic structure:
