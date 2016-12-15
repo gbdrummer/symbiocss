@@ -68,8 +68,6 @@ The net effect is that we don't have to actually think about specificity at all.
 
 If you're worried that chaining selectors will degrade the performance of your CSS, you are correct, however this has not been shown to be a problem worth worrying about in virtually any situation. ** -- CITATION -- ** You are efectively trading a millisecond or two of load/parse time for what could amount to many hours saved on maintenance over time. More on this later.
 
----
-
 ## Taking it further
 This blog is clearly much more simplistic than what we are tasked with developing in the real world, so to demonstrate the scalability of this approach, let's start by adding some different categories of blog articles; how about "health" and "sports" sections:
 
