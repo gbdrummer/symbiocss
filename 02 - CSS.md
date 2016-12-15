@@ -1,6 +1,6 @@
-[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](03 - Structuring your Stylesheets.md)
+# SymbioCSS
 
----
+[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](03 - Structuring your Stylesheets.md)
 
 ## How to write CSS
 
