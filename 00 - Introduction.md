@@ -7,10 +7,11 @@ SymbioCSS is a methodology for writing HTML and CSS which I have developed over 
 ## Why another methodology?
 In my opinion, a good HTML/CSS methodology should meet the following requirements:
 
-1. HTML and CSS code should be clean and semantic,
-2. it should be modular and composable,
-3. it should employ consistent and repeatable patterns, and
-4. it should be easy to read and understand by any size team.
+HTML and CSS code should:
+1. be clean and semantic.
+2. be modular and composable.
+3. employ consistent and repeatable patterns.
+4. be easy to read and understand by any size team.
 
 There are a number of very well-conceived methodologies out there, like OOCSS, SMACSS, and ITCSS. Unfortunately, despite their individual strengths, none of these ticks all the above boxes for me.
 
