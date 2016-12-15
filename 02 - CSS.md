@@ -115,6 +115,10 @@ section {
     padding: 1em;
 }
 
+.blog article h1 {
+	color: blue;
+}
+
 .blog article .summary {
 	font-family: "Comic Sans";
 }
