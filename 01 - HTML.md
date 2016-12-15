@@ -11,15 +11,15 @@
 Let's take an example. Consider this basic document:
 
 <pre>
-### Blog
+<h1>Blog</h1>
 
-#### Article 1 Title
+<h2>Article 1 Title</h2>
 Article 1 summary
 
-#### Article 2 Title
+<h2>Article 2 Title</h2>
 Article 2 summary
 
-#### Article 3 Title
+<h2>Article 3 Title</h2>
 Article 3 summary
 
 </pre>
