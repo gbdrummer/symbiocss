@@ -91,11 +91,12 @@ In other words, our parent `section` is missing some important context. We also 
 Now, when we look at this HTML we understand that we have a blog, which is a section of a larger document, and that blog contains articles, each of which has a heading and a summary paragraph. That's all we need to know!
 
 ** Important Notes: **
+
 1. We've used HTML5 semantic tags to add most of the context we needed (see HTML Rule #1 above),
 2. we used `class` attributes to add the remaining context (see HTML Rule #2 above), and
 3. we did not repeat any of this context inside our blog container as we might with a class-naming convention such as B.E.M., which would stipulate that "blog" be prepended to the articles and "summary" class, ie `.blog__article` and `.blog__article__summary`. (see HTML Rule #3 above).
 
-Now, let's add some style to our blog.
+Next, [let's add some style to our blog](02 - CSS.md).
 
 ---
 [&laquo; Introduction](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [CSS &raquo;](02 - CSS.md)
