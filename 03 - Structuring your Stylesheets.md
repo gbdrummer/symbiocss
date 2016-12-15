@@ -6,10 +6,8 @@
 
 # Structuring your Stylesheets
 
-Let's examine in more detail the way a SymbioCSS style sheet is constructed.
-For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
+Let's examine in more detail the way a SymbioCSS style sheet is constructed:
 
-### Creating a Stylesheet
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
 Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of [ITCSS](http://itcss.io/) and deserves to be considered best practice when following a modern approach to CSS.
