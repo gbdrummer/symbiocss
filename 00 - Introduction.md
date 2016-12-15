@@ -28,9 +28,9 @@ HTML is a markup language, or "a system for annotating a document in a way that 
 
 CSS is a style sheet language, or "a language that expresses the presentation of structured documents." It includes a feature called the Cascade, an algorithm defining how to combine property values originating from different sources. ([Wikipedia](https://en.wikipedia.org/wiki/Style_sheet_language))
 
-**tl;dr the point of HTML is to annotate existing content to add meaningful context, and the point of CSS is to describe document presentation separately from document content.**
+**tl;dr the point of HTML is to annotate existing content to add meaningful context, and the point of CSS is to describe a document's presentation separately from its content.**
 
-Without further ado, on to the approach:
+Without further ado, [on to the approach!](01 - HTML.md)
 
 ---
 [&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](01 - HTML.md)
