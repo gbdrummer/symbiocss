@@ -1,5 +1,5 @@
 # SymbioCSS
-A symbiotic methodology for HTML/CSS development
+Techniques for scalable, composable & maintainable HTML/CSS
 
 ## Table of Contents
 
