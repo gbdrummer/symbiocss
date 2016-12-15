@@ -1,19 +1,20 @@
+#SymbioCSS
+
 [&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04 - Building Reusable Components.md)
 
 ---
 
 # Structuring your Stylesheets
 
+Let's examine in more detail the way a SymbioCSS style sheet is constructed.
 For ideally-functioning CSS, there is a particular structure that can be used. This structure ensures proper cascade and inheritance throughout your CSS file.
-
-Modern UIs call for componentization; Small, encapsulated units of functionality and style that can be used and reused anywhere in your document. In order for these components to work reliably, any HTML, CSS, or JavaScript contained therein needs to be scoped to that component without leaking into the surrounding DOM. HTML and JavaScript can be scoped fairly easily, as can CSS if included inline, but if being loaded from a separate stylesheet more care is necessary.
 
 ### Creating a Stylesheet
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
 Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of [ITCSS](http://itcss.io/) and deserves to be considered best practice when following a modern approach to CSS.
 
-However, there is an additional dimension to this when you enter the world of componentization; Since components are self-contained entities, they have a large amount of CSS that only applies to the component itself. For a UI with a large number of components, a stylesheet can start to become cluttered and difficult to follow if the ITCSS approach is followed correctly.
+However, there is an additional dimension to this when you enter the world of componentization; Since components are self-contained entities, they have a large amount of CSS that only applies to the component itself. For a UI with a large number of components, a stylesheet can start to become cluttered and difficult to follow.
 
 In SymbioCSS, the ITCSS approach to specificity is retained, but further broken down. Rather than structuring your entire stylesheet from least-specific to most-specific, SymbioCSS recommends breaking it up into components and applying the ITCSS method to those. This way you can organize your CSS and specificity in chunks instead of one monolithic stylesheet.
 
