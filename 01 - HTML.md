@@ -44,7 +44,7 @@ We have a basic blog. To display this document on the web, we need to add annota
 </div>
 ```
 
-OK, we've laid out a basic structure for this document. This would certainly work, but it needs additional context. First, let's choose some more appropriate tags for these elements:
+OK, we've laid out a basic structure for this document. This would certainly work, but it needs additional context. First, let's choose some more appropriate tags for this content:
 
 ```HTML
 <section>
