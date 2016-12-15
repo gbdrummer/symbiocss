@@ -2,8 +2,6 @@
 
 [&laquo; Introduction](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [CSS &raquo;](02 - CSS.md)
 
----
-
 ## How to write HTML
 
 1. Choose tags based on their semantic value to the content,
