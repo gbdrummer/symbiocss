@@ -26,7 +26,7 @@ Quickly, here's how I'm defining HTML and CSS:
 
 HTML is a markup language, or "a system for annotating a document in a way that is syntactically distinguishable from the text." ([Wikipedia](https://en.wikipedia.org/wiki/Markup_language)) This means HTML allows you to "mark up" your content, adding meaning and context, without polluting the content itself.
 
-CSS is a style sheet language, or "a language that expresses the presentation of structured documents." ([Wikipedia](https://en.wikipedia.org/wiki/Style_sheet_language)) It includes a feature called the Cascade, an algorithm defining how to combine property values originating from different sources.
+CSS is a style sheet language, or "a language that expresses the presentation of structured documents." It includes a feature called the Cascade, an algorithm defining how to combine property values originating from different sources. ([Wikipedia](https://en.wikipedia.org/wiki/Style_sheet_language))
 
 **tl;dr the point of HTML is to annotate existing content to add meaningful context, and the point of CSS is to describe document presentation separately from document content.**
 
