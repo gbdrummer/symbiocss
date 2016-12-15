@@ -79,7 +79,7 @@ This blog is clearly much more simplistic than what we are tasked with developin
 	</article>
 </section>
 
-<section class="sports news">
+<section class="sports blog">
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
@@ -90,6 +90,7 @@ This blog is clearly much more simplistic than what we are tasked with developin
     </article>
 </section>
 ```
+
 
 Instead of adding "health" or "sports" classes to each of our blog articles, we are taking advantage of the parent-child relationship of HTML tags to add this context (see CSS Rule #2 above). Hence, our CSS will look like this:
 
