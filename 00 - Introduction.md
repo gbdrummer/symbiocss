@@ -2,7 +2,7 @@
 
 ---
 
-SymbioCSS is a methodology for writing HTML and CSS.
+SymbioCSS is a methodology for writing HTML and CSS which I have developed over the last 3 years.
 
 ## Why another methodology?
 In my opinion, a good HTML/CSS methodology should meet the following requirements:
