@@ -1,8 +1,8 @@
+# SymbioCSS
+
 [&laquo; Introduction](00 - Introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [CSS &raquo;](02 - CSS.md)
 
 ---
-
-# SymbioCSS
 
 ## How to write HTML
 
