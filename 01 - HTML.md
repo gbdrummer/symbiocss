@@ -90,7 +90,7 @@ In other words, our parent `section` is missing some important context. We also 
 
 Now, when we look at this HTML we understand that we have a blog, which is a section of a larger document, and that blog contains articles, each of which has a heading and a summary paragraph. That's all we need to know!
 
-** Important Notes: **
+**Important Notes:**
 
 1. We've used HTML5 semantic tags to add most of the context we needed (see HTML Rule #1 above),
 2. we used `class` attributes to add the remaining context (see HTML Rule #2 above), and
