@@ -67,7 +67,7 @@ section {
 }
 ```
 
-Our global styles go at the top of the stylesheet, and our "component-scoped" css goes underneath. This ensures that the cascade works properly, and our more specific component-scoped css will override any of our less specific global rules. `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the color value; It doesn't re-establish the font-weight value (see CSS Rule #3 above).
+Our global styles go at the top of the style sheet, and our "component-scoped" css goes underneath. This ensures that the cascade works properly, and our more specific component-scoped css will override any of our less specific global rules. `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the color value; It doesn't re-establish the font-weight value (see CSS Rule #3 above).
 
 The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
 
