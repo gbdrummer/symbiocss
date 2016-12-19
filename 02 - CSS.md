@@ -226,7 +226,7 @@ You can also then use the parent-child cascade to style "special health blog art
 }
 ```
 
-The key of this approach is *context*. As your website or app grows, you'll find that as your style sheet grows in length, it does not also grow in complexity. These patterns remain consistent and repeatable.
+The key of this approach is *context*. As your style sheet grows in length, you'll find that its complexity remains low. These patterns stay consistent and repeatable throughout.
 
 ---
 [&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](03 - Structuring your Stylesheets.md)
