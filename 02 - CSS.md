@@ -76,12 +76,20 @@ If you're worried that chaining selectors will degrade the performance of your C
 <blockquote>
 ...the lesson here is not to sacrifice semantics or maintainability for efficient CSS.
 </blockquote>
-[Jordan Walker, CSStricks](https://css-tricks.com/efficiently-rendering-css/)
+- [Jordan Walker, CSStricks](https://css-tricks.com/efficiently-rendering-css/)
 
 <blockquote>
 Sweating over the selectors used in modern browsers is futile; most selection methods are now so fast it’s really not worth spending much time over. Furthermore, there is disparity across browsers of what the slowest selectors are anyway. Look here last to speed up your CSS.
 </blockquote>
-[Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/)
+- [Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/)
+
+<blockquote>
+Is all this really necessary? (referring to effort invested in maximizing CSS selector performance)
+
+The short answer is; probably not.
+</blockquote>
+
+- [Harry from CSSWizardry](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)
 
 You are effectively trading a millisecond or two of parse/interpretation time for what could amount to many man hours saved on maintenance over time. More on this later.
 
