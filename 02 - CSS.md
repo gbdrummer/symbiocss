@@ -1,68 +1,46 @@
+# SymbioCSS
+
 [&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](03 - Structuring your Stylesheets.md)
 
----
-# CSS
+## How to write CSS
 
-CSS is an oft-misunderstood and oft-misused technology. As a developer it is common to find yourself in a situation where you are working on CSS written by another developer. Most of the time, that developer's aproach to naming convention and CSS structure is quite different from yours, and if he/she was a particularly lazy developer, there may be layers of hacks and overrides to compete with as you add to the stylesheet. 
+1. Use contextual and chained selectors,
+2. use the parent-child relationship of the HTML elements to create scoping, and
+3. once you have established a context for the elements in your document, only add styles that are specific to that context.
 
-Thankfully, SymbioCSS offers a way of writing CSS that brings clarity to this whole picture. It stipulates that CSS should:
-
-1. use contextual selectors,
-2. read like plain English,
-3. use naming conventions that contain the semantics necessary to define the element **in the context of the user**,
-4. never reuse style rules arbitrarily; repetition of a style rule is OK if being applied to unrelated elements.
-
-## For example
-
-In our previous example, we ended up with this HTML for our News widget:
-
-```HTML
-<section class="news">
-	<h1>News</h1>
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-    </article>
-</section>
-```
-
-Let's add some basic styling:
+Here are some basic styles for our blog:
 
 ```CSS
-.news {
+.blog {
 	margin-bottom: 1em;
 }
 
-.news article {
+.blog article {
 	border: 1px solid black;
 	padding: 1em;
 }
 
-.news article h1 {
+.blog article h1 {
 	font-weight: bold;
+	color: blue;
 }
 
-.news article .summary {
+.blog article .summary {
 	font-family: "Comic Sans";
 }
 ```
 
-There are several things to notice here:
+There are several important things to notice here:
 
-1. Each of these selectors reads like English. 
-2. It is entirely obvious what each selector refers to in the context of the whole document.
-3. Each element is scoped to its parent context through the use of selector chaining.
-4. Just like in the HTML, there is no unnecessary repetition of semantic information, and we have not included any semantics that are not important to the context of each element.
+1. Each of these selectors reads like an English phrase,  
+2. it is entirely obvious what each selector refers to in the context of the whole document just by reading it, and
+3. each element is scoped to its parent context through the use of selector chaining (see CSS Rule #1 above)
 
-Now, let's imagine that we had previously applied some styling rules to some of these elements in a global context:
+It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly. 
+
+If you're skeptical right now, I get it. We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: "Once you have established a context for the elements in your document, only add styles that are specific to that context."
+
+Let's say we have global styes for our`h1` and `section` tags. Our stylesheet would need to be updated like so:
 
 ```CSS
 /* Global rules */
@@ -75,27 +53,57 @@ section {
 }
 
 /* Component-scoped rules */
-.news article {
+.blog article {
 	border: 1px solid black;
 	padding: 1em;
 }
 
-.news article .summary {
+.blog article h1 {
+	color: blue;
+}
+
+.blog article .summary {
 	font-family: "Comic Sans";
 }
 ```
 
-This allows us to take advantage of the cascade. Once we've established a context for the elements we have used, we **only need to add styles that are specific to that context.** Any global rules will still apply because we have not added any styles that will overwrite them. Let's expand upon this by adding some different types of news:
+Our global styles go at the top of the style sheet, and our "component-scoped" css goes underneath. This ensures that the cascade works properly, and our more specific component-scoped css will override any of our less specific global rules. `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the color value; It doesn't re-establish the font-weight value (see CSS Rule #3 above).
+
+The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
+
+If you're worried that chaining selectors will degrade the performance of your CSS, you are correct, however this has not been shown to be a problem worth worrying about in virtually any situation:
+
+[Jordan Walker of CSStricks](https://css-tricks.com/efficiently-rendering-css/) says:
+<blockquote>
+...the lesson here is not to sacrifice semantics or maintainability for efficient CSS.
+</blockquote>
+
+[Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/) has this to say on the subject:
+<blockquote>
+Sweating over the selectors used in modern browsers is futile; most selection methods are now so fast it’s really not worth spending much time over. Furthermore, there is disparity across browsers of what the slowest selectors are anyway. Look here last to speed up your CSS.
+</blockquote>
+
+[Harry from CSSWizardry](http://csswizardry.com/2011/09/writing-efficient-css-selectors/) sums it up like this:
+<blockquote>
+Is all this really necessary? (referring to effort invested in maximizing CSS selector performance)
+
+The short answer is; probably not.
+</blockquote>
+
+Using selector chaining as prescribed by SymbioCSS trades a few milliseconds of parse/interpretation time for what could amount to many man hours saved on maintenance and iteration over time.
+
+## Taking it further
+This blog is clearly much more simplistic than what we are tasked with developing in the real world, so to demonstrate the scalability of SymbioCSS, let's start by adding some different categories of blog articles; how about "health" and "sports" sections:
 
 ```HTML
-<section class="sports news">
+<section class="health blog">
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
 	</article>
 </section>
 
-<section class="world news">
+<section class="sports blog">
 	<article>
 		<h1>Article Title</h1>
 		<p class="summary">...</p>
@@ -106,6 +114,10 @@ This allows us to take advantage of the cascade. Once we've established a contex
     </article>
 </section>
 ```
+
+
+Instead of adding "health" or "sports" classes to each of our blog articles, we are taking advantage of the parent-child relationship of HTML tags to add this context (see CSS Rule #2 above). Hence, our CSS will look like this:
+
 ```CSS
 /* Global rules */
 h1 {
@@ -116,88 +128,105 @@ section {
 	margin-bottom: 1em;
 }
 
-/* "News" context */
-.news article {
+/* Component-scoped rules */
+.blog article {
 	border: 1px solid black;
     padding: 1em;
 }
 
-.news article .summary {
+.blog article h1 {
+	color: blue;
+}
+
+.blog article .summary {
 	font-family: "Comic Sans";
 }
 
-/* "Sports News" context */
-.sports.news {
+.health.blog article {
 	background: blue;
 }
 
-/* "World News" context */
-.world.news {
+.sports.blog article {
 	background: green;
 }
 ```
 
-Now we have two news sections, but rather than adding the "sports" or "world" context directly to each article as a class attribute, we've added it to each parent container, which allows the "sports" or "world" context to cascade to all the respective child elements. If we wanted to add some special styling to world news articles, for example, we'd write our CSS in just that way:
+This means that any article added to the "health blog" container will have a blue background, while the same article added to the "sports blog" container will have a green background. The "health" or "sports" context is *cascading* to the child elements of the container.
 
-```CSS
-.world.news article {
-	font-family: "Wingdings";
-}
-```
+This is a purely Object-oriented approach to CSS. Here are just a few benefits:
 
-By writing CSS this way, you have accomplished a number of important feats:
-
-1. You no longer have to even think about the specificity of your selectors. It is all taken care of through namespacing.
-2. Any developer who looks at your CSS will immediately understand which DOM elements your selectors are referencing. There will be no guesswork or searching through the stylesheet for a vaguely-named selector.
-3. ALL articles share the same HTML template, but will be styled appropriately depending on which section they are added to.
+1. Your style sheet reads like a list of clearly-defined references to elements in your HTML,
+2. each selector applies the minimum number of style rules necessary,
+3. selectors share style rules in the most efficient way possible (the cascade),
+4. specificity is taken care of inherently,
+5. your style sheet will naturally become ordered from least-specific to most-specific (ala ITCSS), and
+6. it will have the added benefit of being organized from one reusable component to the next. Any of these components could be abstracted into their own style sheet, or used inside a Web Component, etc.
+7. Each component is completely self-contained, and the chances of conflicts are drastically minimized due to the specificity introduced with chained selectors.
 
 ## Modifiers
 
-From here, it is a simple matter to tweak individual news articles by adding modifiers: 
+A natural question at this point would be "What am I supposed to do if I need to override any of these really specific selectors with a modifier class?" As an example, maybe you have a ".hidden" class that you use to show/hide elements with JavaScript:
 
-`<article class="alert">` or `<article class="special-report">`
+```CSS
+.hidden {
+	display: none;
+    visibility: hidden;
+	opacity: 0;
+}
+```
 
-At this point you might be thinking "What if I have some global utility classes I want to use? Won't these specific selectors overwrite them?" The answer is yes, so enter the red-headed stepchild of CSS:
+Obviously, if any of your component-scoped CSS includes display, visibility or opacity rules, this class will not work as intended. Thankfully, CSS provides us with a simple workaround:
 
 ```CSS
 .hidden {
 	display: none !important;
-	visibility: hidden !important;
+    visibility: hidden !important;
 	opacity: 0 !important;
 }
 ```
 
-By adding `!important` to your global modifiers you can rest assured their style rules will override any others. Modifiers can be scoped either globally or locally. For example:
+Most methodologies advise against using the `!important` flag, but the reasoning is usually something to the effect of "Using !important can lead to unexpected conflicts that are hard to manage." This is true in the absence of a structured approach to writing CSS, but when you follow logical patterns, this becomes a non-issue. If following the SymbioCSS approach, a global modifier class is the only case where the `!important` flag will ever need to be used. In fact, this is in line with the original intent of the `!important` flag, which was to act as a guaranteed override of document styles so that users could establish their own customized style sheet (which can be used to enlarge fonts or change colors for those with vision troubles, for example).
+
+In SymbioCSS, modifiers can also be scoped locally, in which case the `!important` flag is not needed. For example, let's say we want to be able to mark certain blog articles as "special". We can do so by adding a local modifier:
 
 ```HTML
-<article class="hidden"> <!-- "hidden" is our global modifier -->
-	<h1>Article Title</h1>
-	<p class="summary">...</p>
-</article>
-
-<article class="alert"> <!-- "alert" is our local modifier -->
-	<h1>Article Title</h1>
-	<p class="summary">...</p>
-</article>
+<section class="blog">
+	<article class="special">
+		<h1>Article Title</h1>
+		<p class="summary">...</p>
+	</article>
+    <article>
+		<h1>Article Title</h1>
+		<p class="summary">...</p>
+	</article>
+    <article>
+		<h1>Article Title</h1>
+		<p class="summary">...</p>
+	</article>
+</section>
 ```
+
+We'd then add this component-scoped CSS:
+
 ```CSS
-/* Global Modifier */
-/* scoped to the global namespace */
-.hidden {
-	display: none !important;
-	visibility: hidden !important;
-	opacity: 0 !important;
-}
-
-/* Local Modifier */
-/* scoped to the element being modified through selector chaining */
-.news article.alert {
-	background: red;
-	color: green;
-	text-decoration: blink;
+.blog article.special {
+	font-family: Wingdings;
 }
 ```
-Global modifiers have `!important` flags on each rule to ensure they override all local styles, while local modifiers do not. Note that apart from special circumstances, global modifiers are the only appropriate use case for the `!important` flag.
+
+You can also then use the parent-child cascade to style "special health blog articles" differently from "special sports blog articles":
+
+```CSS
+.health.blog article.special {
+	text-shadow: 1px 1px 2px pink;
+}
+
+.sports.blog article.special {
+	text-shadow: 1px 1px 2px orange;
+}
+```
+
+The key of this approach is *context*. As your style sheet grows in length, you'll find that its complexity remains low. These patterns stay consistent and repeatable throughout.
 
 ---
 [&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Stylesheets &raquo;](03 - Structuring your Stylesheets.md)

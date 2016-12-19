@@ -1,10 +1,20 @@
-[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+#SymbioCSS
 
----
+[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
 
 # Building Reusable Components
 
-When building composable components for UI, two perspectives must be considered; Internal and External Context. In other words, the developer must plan for how the internal parts of a component are presented, and for how the component itself interacts with the larger document. To cover for both perspectives, a very simple basic structure can be used:
+Now that you are familiar with the basic approach, let's explore how powerful it can be; Let's build a reusable component with a number of different interactions and states.
+
+To construct a component with SymbioCSS, follow these steps:
+
+1. Select an appropriate HTML tag
+2. Choose a descriptive name for the component and establish its default properties
+3. Choose descriptors for the component's states and establish their properties
+4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
+5. Add any additional HTML attributes as necessary
+
+The basic structure of the component looks like this:
 
 ```HTML
 <{tag} class="[{variations}] {component} [{state}]" id="{javascript_hook}" {attributes}>
@@ -12,19 +22,11 @@ When building composable components for UI, two perspectives must be considered;
 </{tag}>
 ```
 
-To construct a component, follow these steps:
-
-1. Select an appropriate HTML tag
-2. Choose a descriptive name for the component that is semantic to the user context and establish its default properties
-3. Choose descriptors for the component's states and establish their properties
-4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
-5. Add any additional HTML attributes as necessary
-
 Here's a simple example:
 
-Let's say we have a basic UI for editing a block of text. At the bottom, we have a "Save" button. When the user clicks the button, its state changes to show whether or not the save operation was successful. Let's build this button:
+Let's say we are tasked with creating a UI that allows the user to edit a block of text. At the bottom, we have a "Save" button which will update in response to whether or not the save operation was successful.
 
-First, we select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
+First, we need to select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
 
 ```HTML
 <button>
@@ -162,11 +164,9 @@ button.fancy.save {
 }
 ```
 
----
-
 This component can now be used anywhere! This structure is applicable to any form of componentization; React, Angular, Web Components, whatever you may be using, the built-in scoping of this structure will work. When you structure your entire project this way, you may be surprised at how it just simply works, with no unexpected conflicts. And you get the added benefit of HTML and CSS that are clean, semantic, and easy to understand by a large team of developers.
 
-## Another Example
+## Standardizing
 
 There is also an ideal way to structure your Component-scoped CSS; While not absolutely necessary, it does produce the cleanest CSS possible, free of unecessary overrides, and it does so by following a simple mobile-first approach.
 
@@ -265,7 +265,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```
 
-Here, we've "reset" the specificity order a couple times within this component. That is because it makes sense to consider "danger buttons" and "safety buttons" as self-contained components. They are extensions of the main "button" component, and so they receive styles from it, but they then extend that component with their own styles. In other words, "danger" and "safety" buttons do not share styles with each other, but they do both share styles with the "button" component. By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
+Here, we've "reset" the specificity order a couple times within this component. We're treating "danger buttons" and "safety buttons" as self-contained extensions of the main "button" component. By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
 
 ```CSS
 <Component Context>
