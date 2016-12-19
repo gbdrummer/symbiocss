@@ -1,6 +1,7 @@
+# SymbioCSS
+
 [&laquo; Building Reusable Components](04 - Building Reusable Components.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate &raquo; (Coming Soon)
 
----
 # Interfacing with JavaScript
 
 Cluttered HTML and indecipherable CSS are bad enough as it is, but throw JavaScript into the mix and a bad situation becomes worse. For instance, if you needed to target an HTML node in your JavaScript, which of the following two examples would you prefer to use?
