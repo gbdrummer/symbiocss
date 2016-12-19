@@ -166,7 +166,7 @@ button.fancy.save {
 
 This component can now be used anywhere! This structure is applicable to any form of componentization; React, Angular, Web Components, whatever you may be using, the built-in scoping of this structure will work. When you structure your entire project this way, you may be surprised at how it just simply works, with no unexpected conflicts. And you get the added benefit of HTML and CSS that are clean, semantic, and easy to understand by a large team of developers.
 
-## Another Example
+## Standardizing
 
 There is also an ideal way to structure your Component-scoped CSS; While not absolutely necessary, it does produce the cleanest CSS possible, free of unecessary overrides, and it does so by following a simple mobile-first approach.
 
