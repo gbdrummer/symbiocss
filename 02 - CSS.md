@@ -90,7 +90,7 @@ Is all this really necessary? (referring to effort invested in maximizing CSS se
 The short answer is; probably not.
 </blockquote>
 
-In the vast majority of cases, by using selector chaining, you are effectively trading a few milliseconds of parse/interpretation time for what could amount to many man hours saved on maintenance and iteration over time.
+Using selector chaining as prescribed by SymbioCSS trades a few milliseconds of parse/interpretation time for what could amount to many man hours saved on maintenance and iteration over time.
 
 ## Taking it further
 This blog is clearly much more simplistic than what we are tasked with developing in the real world, so to demonstrate the scalability of SymbioCSS, let's start by adding some different categories of blog articles; how about "health" and "sports" sections:
