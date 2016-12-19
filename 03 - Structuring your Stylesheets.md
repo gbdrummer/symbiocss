@@ -45,7 +45,7 @@ In other words, your stylesheet will look something like this:
 
 .component-2.modifier .sub-component {...}
 
-/* Singletons */
+/***** Singletons *****/
 /* Any ids in your project should be styled here. More on this later. */
 
 #component-1_flex_wrapper {
