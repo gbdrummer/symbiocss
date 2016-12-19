@@ -263,7 +263,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```
 
-Here, we've "reset" the specificity order a couple times within this component. That is because it makes sense to consider "danger buttons" and "safety buttons" as self-contained components which are extensions of the main "button" component. "danger" and "safety" buttons do not share styles with each other, but they do both share styles with the "button" component; By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
+Here, we've "reset" the specificity order a couple times within this component. We're treating "danger buttons" and "safety buttons" as self-contained extensions of the main "button" component. By resetting the specificity, we're creating a new "Context" for each button type. To illustrate:
 
 ```CSS
 <Component Context>
