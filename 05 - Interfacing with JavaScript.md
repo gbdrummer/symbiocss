@@ -97,7 +97,7 @@ The integrity of our content outline is unchanged, but we can now display it in 
 
  `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. (See [Structuring your Stylesheets](03 - Structuring your Stylesheets.md)).
  
-That's it for now! Check back later for some starter code and more examples. Happy Developing!
+That's it for now! Check back later for starter code and more examples. Happy Developing!
 
 - Graham Butler
 
