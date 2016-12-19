@@ -15,7 +15,7 @@ When building composable components for UI, two perspectives must be considered;
 To construct a component, follow these steps:
 
 1. Select an appropriate HTML tag
-2. Choose a descriptive name for the component that is semantic to the user context and establish its default properties
+2. Choose a descriptive name for the component that is semantic to the content and establish its default properties
 3. Choose descriptors for the component's states and establish their properties
 4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
 5. Add any additional HTML attributes as necessary
