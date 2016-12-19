@@ -1,6 +1,6 @@
-[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+#SymbioCSS
 
----
+[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
 
 # Building Reusable Components
 
