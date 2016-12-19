@@ -2,8 +2,6 @@
 
 [&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](01 - HTML.md)
 
----
-
 # Introduction
 
 SymbioCSS is an approach to writing HTML and CSS in a way that maintains separation of concerns (SOC) while providing for symbiosis between the two technologies. It applies common patterns that allow for better organization and maintainability of Web User Interfaces.
