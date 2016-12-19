@@ -10,29 +10,27 @@ Let's examine in more detail the way a SymbioCSS style sheet is constructed:
 
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
-Rulesets should be ordered from least specific to most specific. In other words, your global, reusable styles go at the top of your stylesheet, and your more specific, component-scoped styles go toward the bottom. This is the approach of [ITCSS](http://itcss.io/) and deserves to be considered best practice when following a modern approach to CSS.
+In SymbioCSS, rulesets are arranged from least specific to most specific, as in [ITCSS](http://itcss.io/). However, it is broken down a bit further. Rather than structuring your entire stylesheet from least-specific to most-specific, SymbioCSS recommends breaking it up into components and applying the ITCSS approach to specificity to those. This way you can organize your CSS and specificity in chunks instead of one monolithic stylesheet.
 
-However, there is an additional dimension to this when you enter the world of componentization; Since components are self-contained entities, they have a large amount of CSS that only applies to the component itself. For a UI with a large number of components, a stylesheet can start to become cluttered and difficult to follow.
-
-In SymbioCSS, the ITCSS approach to specificity is retained, but further broken down. Rather than structuring your entire stylesheet from least-specific to most-specific, SymbioCSS recommends breaking it up into components and applying the ITCSS method to those. This way you can organize your CSS and specificity in chunks instead of one monolithic stylesheet.
-
-in other words, your stylesheet will look something like this:
+In other words, your stylesheet will look something like this:
 
 ```CSS
-/* Global utility classes */
+/***** Global utility classes *****/
+
 .hidden {
 	display: none !important;
-    visibility: hidden !important;
+	visibility: hidden !important;
 	opacity: 0 !important; 
 }
 
 .show {
 	display: block !important;
-    visibility: visible !important;
+	visibility: visible !important;
 	opacity: 1 !important;
 }
 
-/* Component-specific styles */
+/***** Component-specific styles *****/
+
 /* Component 1 Context */
 .component-1 {...}
 
