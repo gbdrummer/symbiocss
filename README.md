@@ -12,7 +12,7 @@ Techniques for scalable, composable & maintainable HTML/CSS
 5. [Building Reusable Components](04 - Building Reusable Components.md)
 6. [Interfacing with JavaScript](05 - Interfacing with JavaScript.md)
 
-### Example Code
+### Example Code (Coming Soon!)
 7. Boilerplate
 8. A Basic Website
 9. Chassis Framework
