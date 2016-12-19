@@ -69,7 +69,7 @@ If we want to group the middle three sections together in columns, it would make
 	<section>
 		...
 	</section>
-	<div id="">
+	<div id="#blog_section_flex_wrapper">
 		<section>
 			...
 		</section>
