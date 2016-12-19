@@ -4,7 +4,17 @@
 
 # Building Reusable Components
 
-When building composable components for UI, two perspectives must be considered; Internal and External Context. In other words, the developer must plan for how the internal parts of a component are presented, and for how the component itself interacts with the larger document. To cover for both perspectives, a very simple basic structure can be used:
+Now that you are familiar with the basic approach, let's explore how powerful it can be; Let's build a reusable component with a number of different interactions and states.
+
+To construct a component with SymbioCSS, follow these steps:
+
+1. Select an appropriate HTML tag
+2. Choose a descriptive name for the component and establish its default properties
+3. Choose descriptors for the component's states and establish their properties
+4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
+5. Add any additional HTML attributes as necessary
+
+The basic structure of the component looks like this:
 
 ```HTML
 <{tag} class="[{variations}] {component} [{state}]" id="{javascript_hook}" {attributes}>
@@ -12,19 +22,11 @@ When building composable components for UI, two perspectives must be considered;
 </{tag}>
 ```
 
-To construct a component, follow these steps:
-
-1. Select an appropriate HTML tag
-2. Choose a descriptive name for the component that is semantic to the content and establish its default properties
-3. Choose descriptors for the component's states and establish their properties
-4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
-5. Add any additional HTML attributes as necessary
-
 Here's a simple example:
 
-Let's say we have a basic UI for editing a block of text. At the bottom, we have a "Save" button. When the user clicks the button, its state changes to show whether or not the save operation was successful. Let's build this button:
+Let's say we are tasked with creating a UI that allows the user to edit a block of text. At the bottom, we have a "Save" button which will update in response to whether or not the save operation was successful.
 
-First, we select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
+First, we need to select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
 
 ```HTML
 <button>
