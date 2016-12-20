@@ -95,7 +95,7 @@ If we want to group the middle three sections together in columns, it would make
 
 The integrity of our content outline is unchanged, but we can now display it in any way we choose. It's best to use this technique sparingly to keep your HTML uncluttered, but it is a good way of separating elements that are semantic to the content and those that aren't/
 
- `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. (See [Structuring your Stylesheets](03 - Structuring your Stylesheets.md)).
+ `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. (See [Structuring your Style Sheets](03 - Structuring your Style Sheets.md)).
  
 That's it for now! Check back later for starter code and more examples. Happy Developing!
 
