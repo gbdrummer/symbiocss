@@ -1,6 +1,6 @@
 #SymbioCSS
 
-[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+[&laquo; Structuring Your Style Sheets](03 - Structuring your Style Sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
 
 # Building Reusable Components
 
@@ -374,4 +374,4 @@ Visual styles include anything that affects how an element is presented without 
 -->
 
 ---
-[&laquo; Structuring Your Stylesheets](03 - Structuring your Stylesheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+[&laquo; Structuring Your Style Sheets](03 - Structuring your Style Sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
