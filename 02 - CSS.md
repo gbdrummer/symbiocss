@@ -38,7 +38,7 @@ There are several important things to notice here:
 
 It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly. 
 
-If you're skeptical right now, I get it. We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: "Once you have established a context for the elements in your document, only add styles that are specific to that context."
+If you're skeptical right now, I get it. We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
 Let's say we have global styes for our`h1` and `section` tags. Our stylesheet would need to be updated like so:
 
