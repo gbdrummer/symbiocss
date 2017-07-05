@@ -42,15 +42,15 @@ Let's establish our button's default properties with some CSS:
 
 ```CSS
 button.save {
-	display: inline-flex;
-	justify-content: center;
-    align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
     
-	padding: 0 1em;
-	line-height: 1.618em;
+  padding: 0 1em;
+  line-height: 1.618em;
     
-	background: blue;
-    color: white;
+  background: blue;
+  color: white;
 }
 ```
 
@@ -60,34 +60,34 @@ Next, let's think about what states we need. Let's say our design spec calls for
 
 ```HTML
 <button class="save [successful] [failed]">
-	<img class="fail icon" src="icons/warning.svg" />
-    <img class="success icon" src="icons/checkmark.svg" />
-	Save
+  <img class="fail icon" src="icons/warning.svg" />
+  <img class="success icon" src="icons/checkmark.svg" />
+  Save
 </button>
 ```
 ...and let's add the CSS:
 
 ```CSS
 button.save .icon {
-	display: none;
-    width: 1.382em;
-	height: 1.382em;
+  display: none;
+  width: 1.382em;
+  height: 1.382em;
 }
 
 button.save.successful {
-	background: green;
+  background: green;
 }
 
 button.save.successful .success.icon {
-	display: inline-block;
+  display: inline-block;
 }
 
 button.save.failed {
-	background: red;
+  background: red;
 }
 
 button.save.failed .fail.icon {
-	display: inline-block;
+  display: inline-block;
 }
 ```
 
@@ -97,15 +97,15 @@ Now let's say we want to create a variation of this component. Let's add a "fanc
 
 ```HTML
 <button class="[fancy] save [successful] [failed]">
-	<img class="fail icon" src="icons/warning.svg" />
-    <img class="success icon" src="icons/checkmark.svg" />
-	Save
+  <img class="fail icon" src="icons/warning.svg" />
+  <img class="success icon" src="icons/checkmark.svg" />
+  Save
 </button>
 ```
 
 ```CSS
 button.fancy.save {
-	font-family: cursive;
+  font-family: cursive;
 }
 ```
 
@@ -115,48 +115,48 @@ The final HTML/CSS for this component looks like this:
 
 ```HTML
 <button class="[fancy] save [successful] [failed]">
-	<img class="fail icon" src="icons/warning.svg" />
-    <img class="success icon" src="icons/checkmark.svg" />
-	Save
+  <img class="fail icon" src="icons/warning.svg" />
+  <img class="success icon" src="icons/checkmark.svg" />
+  Save
 </button>
 ```
 ```CSS
 button.save {
-	display: inline-flex;
-	justify-content: center;
-    align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   
-	padding: 0 1em;
-	line-height: 1.618em;
+  padding: 0 1em;
+  line-height: 1.618em;
   
-	background: blue;
-  	color: white;
+  background: blue;
+  color: white;
 }
 
 button.save .icon {
-	display: none;
-  	width: 1.382em;
-	height: 1.382em;
+  display: none;
+  width: 1.382em;
+  height: 1.382em;
 }
 
 button.save.successful {
-	background: green;
+  background: green;
 }
 
 button.save.successful .success.icon {
-	display: inline-block;
+  display: inline-block;
 }
 
 button.save.failed {
-	background: red;
+  background: red;
 }
 
 button.save.failed .fail.icon {
-	display: inline-block;
+  display: inline-block;
 }
 
 button.fancy.save {
-	font-family: cursive;
+  font-family: cursive;
 }
 ```
 
@@ -169,9 +169,7 @@ There is also an ideal way to structure your Component-scoped CSS; While not abs
 For example, consider this basic component:
 
 ```HTML
-<a class="button">
-	Enter the Danger Zone
-</a>
+<a class="button">Enter the Danger Zone</a>
 ```
 
 Let's say our hypothetical design specifies that this basic button should display inline with other buttons at viewport widths above our "UI switch point" (the point at which our layout switches between a small-screen version and a larger-screen version) and should fill the full width of the layout on smaller viewports.
@@ -180,17 +178,17 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 ```CSS
 .button {
-	display: block;
-	margin: 0 0 .618em;
-	background-color: red;
-	border-radius: .382em;
+  display: block;
+  margin: 0 0 .618em;
+  background-color: red;
+  border-radius: .382em;
 }
 
 @media screen and (min-width: 640px) {
-	.button {
-		display: inline;
-		margin: 0 .618em 0 0;
-	}
+  .button {
+    display: inline;
+    margin: 0 .618em 0 0;
+  }
 }
 
 ```
@@ -201,22 +199,22 @@ Let's add a hover state to the button:
 
 ```CSS
 .button {
-	display: block;
-	margin: 0 0 .618em;
-	background-color: red;
-	border-radius: .382em;
+  display: block;
+  margin: 0 0 .618em;
+  background-color: red;
+  border-radius: .382em;
 }
 
 .button:hover {
-	font-weight: bold;
-	background-color: pink;
+  font-weight: bold;
+  background-color: pink;
 }
 
 @media screen and (min-width: 640px) {
-	.button {
-		display: inline;
-		margin: 0 .618em 0 0;
-	}
+  .button {
+    display: inline;
+    margin: 0 .618em 0 0;
+  }
 }
 
 ```
@@ -227,36 +225,36 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```CSS
 .button {
-	display: block;
-	margin: 0 0 .618em;
-	border-radius: .382em;
+  display: block;
+  margin: 0 0 .618em;
+  border-radius: .382em;
 }
 
 .button:hover {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .danger.button {
-	background-color: red;
+  background-color: red;
 }
 
 .danger.button:hover {
-	background-color: pink;
+  background-color: pink;
 }
 
 .safety.button {
-	background-color: green;
+  background-color: green;
 }
 
 .safety.button:hover {
-	background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 @media screen and (min-width: 640px) {
-	.button {
-		display: inline;
-		margin: 0 .618em 0 0;
-	}
+  .button {
+    display: inline;
+    margin: 0 .618em 0 0;
+  }
 }
 
 ```
