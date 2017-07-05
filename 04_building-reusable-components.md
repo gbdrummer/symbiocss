@@ -260,52 +260,54 @@ Here, we've "reset" the specificity order a couple times within this component. 
 ```CSS
 <Component Context>
 
-	<Context Level 1: "Button">
-		.button {
-			display: block;
-			margin: 0 0 .618em;
-			border-radius: .382em;
-		}
+  <Context Level 1: "Button">
+    .button {
+      display: block;
+      margin: 0 0 1em;
+      background-color: red;
+      border-radius: .382em;
+      color: white;
+    }
 	
-		.button:hover {
-			font-weight: bold;
-		}
+    .button:hover {
+      font-weight: bold;
+    }
 		
-		<Context Level 2a: "Danger Button">
-			.danger.button {
-				background-color: red;
-			}
+    <Context Level 2a: "Danger Button">
+      .danger.button {
+        background-color: red;
+      }
 			
-			.danger.button:hover {
-				background-color: pink;
-			}
-		</Context Level 2a>
+      .danger.button:hover {
+        background-color: pink;
+      }
+    </Context Level 2a>
 		
-		<Context Level 2b: "Safety Button">
-			.safety.button {
-				background-color: green;
-			}
+    <Context Level 2b: "Safety Button">
+      .safety.button {
+        background-color: green;
+      }
 			
-			.safety.button:hover {
-				background-color: lightgreen;
-			}
-		</Context Level 2b>
-	</Context Level 1>
+      .safety.button:hover {
+        background-color: lightgreen;
+      }
+    </Context Level 2b>
+  </Context Level 1>
 	
-	/* Reset all contexts */
+  /* Reset all contexts */
 	
-	@media screen and (min-width: 640px) {
-		<Context Level 1: "Button">
-			.button {
-				display: inline;
-				margin: 0 .618em 0 0;
-			}
+  @media screen and (min-width: 640px) {
+    <Context Level 1: "Button">
+      .button {
+        display: inline;
+        margin: 0 .618em 0 0;
+      }
 			
-			<Additional Contexts />
-		</Context Level 1>
-	}
+      <Additional Contexts />
+    </Context Level 1>
+  }
 	
-	/* Additional Media Queries reset all contexts */
+  /* Additional Media Queries reset all contexts */
 
 </Component Context>
 
@@ -315,34 +317,36 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 
 ```SCSS
 .button {
-	display: block;
-	margin: 0 0 .618em;
-	border-radius: .382em;
+  display: block;
+  margin: 0 0 1em;
+  background-color: red;
+  border-radius: .382em;
+  color: white;
 	
-	&:hover {
-		font-weight: bold;
-	}
+  &:hover {
+    font-weight: bold;
+  }
 	
-	&.danger {
-		background-color: red;
+  &.danger {
+    background-color: red;
 		
-		&:hover {
-			background-color: pink;
-		}
-	}
+    &:hover {
+      background-color: pink;
+    }
+  }
 	
-	&.safety {
-		background-color: green;
+  &.safety {
+    background-color: green;
 
-		&:hover {
-			background-color: lightgreen;
-		}
-	}
+    &:hover {
+      background-color: lightgreen;
+    }
+  }
 	
-	@media screen and (min-width: 640px) {
-		display: inline;
-		margin: 0 .618em 0 0;
-	}
+  @media screen and (min-width: 640px) {
+    display: inline;
+    margin: 0 .618em 0 0;
+  }
 }
 ```
 
