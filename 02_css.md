@@ -117,25 +117,25 @@ The short answer is; probably not.
 Using selector chaining as prescribed by SymbioCSS trades a few milliseconds of parse/interpretation time for what could amount to many man hours saved on maintenance and iteration over time.
 
 ## Taking it further
-This blog is clearly much more simplistic than what we are tasked with developing in the real world, so to demonstrate the scalability of SymbioCSS, let's start by adding some different categories of blog articles; how about "health" and "sports" sections:
+This blog is clearly much more simplistic than what we are tasked with developing in the real world, so to demonstrate the scalability of SymbioCSS, let's start by adding some different categories of blog articles; let's add "Health" and "Sports" categories:
 
 ```HTML
 <section class="health blog">
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
+  <article>
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
 </section>
 
 <section class="sports blog">
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
-	<article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-    </article>
+  <article>
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
+  <article>
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
 </section>
 ```
 
