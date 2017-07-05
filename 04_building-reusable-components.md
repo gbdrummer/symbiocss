@@ -90,35 +90,28 @@ button.save.failed .icon {
 }
 ```
 
-Now, all we have to do to change the state of this button is add classes "successful" or "failed". The CSS cascade takes care of the rest.
+Now, all we have to do to change the state of this button is add classes "successful" or "failed". The Cascade and Specificity take care of the rest.
 
-Now let's say we want to create a variation of this component. Let's add a "fancy" local modifier:
+Now let's say we want to create a variation of this component. Let's add a "disabled" local modifier:
 
 ```HTML
-<button class="[fancy] save [successful] [failed]">
-  <img class="fail icon" src="icons/warning.svg" />
-  <img class="success icon" src="icons/checkmark.svg" />
+<button class="[disable] save [successful] [failed]">
+  <div class="icon"></div>
   Save
 </button>
 ```
 
 ```CSS
-button.fancy.save {
-  font-family: cursive;
+button.save.disabled {
+  opacity: .382;
+  pointer-events: none;
 }
 ```
 
 The properties of this modifier will cascade to all elements of this button regardless of which state is active at a given time.
 
-The final HTML/CSS for this component looks like this:
+The final CSS for this component looks like this:
 
-```HTML
-<button class="[fancy] save [successful] [failed]">
-  <img class="fail icon" src="icons/warning.svg" />
-  <img class="success icon" src="icons/checkmark.svg" />
-  Save
-</button>
-```
 ```CSS
 button.save {
   display: inline-flex;
@@ -142,19 +135,19 @@ button.save.successful {
   background: green;
 }
 
-button.save.successful .success.icon {
-  display: inline-block;
+button.save.successful .icon {
+  background-image: url("icons/checkmark.svg");
 }
 
 button.save.failed {
   background: red;
 }
 
-button.save.failed .fail.icon {
-  display: inline-block;
+button.save.failed .icon {
+  background-image: url("icons/warning.svg");
 }
 
-button.fancy.save {
+button.save.disabled {
   font-family: cursive;
 }
 ```
