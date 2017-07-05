@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](./01_html.md)
+[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](./symbiocss/symbiocss/01_html.md)
 
 # Introduction
 
@@ -32,7 +32,7 @@ CSS is a style sheet language, or "a language that expresses the presentation of
 
 **tl;dr the point of HTML is to annotate existing content to add meaningful context, and the point of CSS is to describe a document's presentation separately from its content.**
 
-Without further ado, [on to the approach!](./01_html.md)
+Without further ado, [on to the approach!](./symbiocss/01_html.md)
 
 ---
-[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](./01_html.md)
+[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](./symbiocss/01_html.md)
