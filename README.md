@@ -3,7 +3,7 @@ Techniques for scalable, composable & maintainable HTML/CSS
 
 ## Table of Contents
 
-1. [Introduction](./00_introduction.md)
+1. [Introduction](https://github.com/gbdrummer/symbiocss/00_introduction.md)
 2. [HTML](./01_html.md)
 3. [CSS](./02_css.md)
 
