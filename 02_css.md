@@ -75,7 +75,7 @@ With these styles applied globally, we can now rewrite our blog component styles
 }
 ```
 
-Our global styles go at the top of the stylesheet and will be applied to all `h1` and `section` elements across the board. Our "component-scoped" css receives the global styles thanks to the Cascade, and then applies additional styles to the blog component, leaving the global styles untouched thanks to Specificity. 
+Our global styles go at the top of the stylesheet and will be applied to all `h1` and `section` elements across the board. Our "component-scoped" css receives the global styles thanks to the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade), and then applies additional styles to the blog component, leaving the global styles untouched thanks to [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). 
 
 In other words, `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight.
 
