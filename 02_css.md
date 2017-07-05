@@ -32,9 +32,9 @@ Here are some basic styles for our blog:
 
 There are several important things to notice here:
 
-1. Each of these selectors reads like an English phrase,  
+1. Each CSS selector reads like an English phrase,  
 2. each CSS selector makes it clear which part of the document it refers to, and
-3. each rule block is scoped to the "blog" section through the use of contextual selector chaining.
+3. each CSS rule block is scoped to the "blog" section through the use of contextual selector chaining.
 
 It is also important to notice that this structure creates a "CSS Component" that we can now reuse. If we wanted to display this blog or a similar one elsewhere on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
