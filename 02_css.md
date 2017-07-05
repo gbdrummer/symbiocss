@@ -161,7 +161,7 @@ This is a somewhat Object-Oriented approach to CSS. Here are just a few benefits
 4. specificity is inherently taken care of because of selector chaining,
 5. your style sheet will naturally become ordered from least-specific to most-specific (ala [ITCSS](http://itcss.io/)), and
 6. it will have the added benefit of being organized from one reusable component to the next. 
-  6a. As a side benefit, any of these components could be abstracted into their own style sheet, or used inside a Web Component, etc.
+⋅⋅6a. As a side benefit, any of these components could be abstracted into their own style sheet, or used inside a Web Component, etc.
 7. the chances of conflicts between components are practically nil due to the specificity introduced by selector chaining.
 
 ## Modifiers
