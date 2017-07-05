@@ -169,9 +169,9 @@ A natural question at this point would be "What am I supposed to do if I need to
 
 ```CSS
 .hidden {
-	display: none;
-    visibility: hidden;
-	opacity: 0;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 ```
 
@@ -179,9 +179,9 @@ Obviously, if any of your component-scoped CSS includes display, visibility or o
 
 ```CSS
 .hidden {
-	display: none !important;
-    visibility: hidden !important;
-	opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 ```
 
