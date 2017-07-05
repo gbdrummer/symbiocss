@@ -12,21 +12,21 @@ Here are some basic styles for our blog:
 
 ```CSS
 .blog {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .blog article {
-	border: 1px solid black;
-	padding: 1em;
+  border: 1px solid black;
+  padding: 1em;
 }
 
 .blog article h1 {
-	font-weight: bold;
-	color: blue;
+  font-weight: bold;
+  color: blue;
 }
 
 .blog article .summary {
-	font-family: "Comic Sans";
+  font-family: "Comic Sans";
 }
 ```
 
@@ -48,6 +48,7 @@ Let's say we have global styes for our`h1` and `section` tags:
 
 ```CSS
 /* Global rules --------------------------------- */
+
 h1 {
   font-weight: bold;
 }
@@ -61,6 +62,7 @@ With these styles applied globally, we can now rewrite our blog component styles
 
 ```CSS
 /* Blog Component ------------------------------- */
+
 .blog article {
   border: 1px solid black;
   padding: 1em;
