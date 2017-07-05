@@ -207,7 +207,7 @@ Let's add a hover state to the button:
 @media screen and (min-width: 640px) {
   .button {
     display: inline;
-    margin: 0 .618em 0 0;
+    margin: 0 1em 0 0;
   }
 }
 
