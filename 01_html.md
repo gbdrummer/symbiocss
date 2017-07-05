@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Introduction](./00_introduction.md) | [Table of Contents](../../symbiocss) | [CSS &raquo;](./02_css.md)
+[&laquo; Introduction](./00_introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [CSS &raquo;](./02_css.md)
 
 ## How to write HTML
 
@@ -96,7 +96,7 @@ Now, when we look at this HTML we understand that we have a blog, which is a sec
 2. we used `class` attributes to add the remaining context (see HTML Rule #2 above), and
 3. we did not repeat any of this context inside our blog container as we might with a class-naming convention such as B.E.M., which would stipulate that "blog" be prepended to the articles and "summary" class, ie `<article class="blog__article">` and `<p class="blog__article__summary">`. (see HTML Rule #3 above).
 
-Next, [let's add some style to our blog](02 - CSS.md).
+Next, [let's add some style to our blog](./02_css.md).
 
 ---
-[&laquo; Introduction](./00_introduction.md) | [Table of Contents](../../symbiocss) | [CSS &raquo;](./02_css.md)
+[&laquo; Introduction](./00_introduction.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [CSS &raquo;](./02_css.md)

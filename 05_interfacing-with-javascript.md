@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](../../symbiocss) | Boilerplate &raquo; (Coming Soon)
+[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate &raquo; (Coming Soon)
 
 # Interfacing with JavaScript
 
@@ -102,4 +102,4 @@ That's it for now! Check back later for starter code and more examples. Happy De
 - Graham Butler
 
 ---
-[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](../../symbiocss) | Boilerplate &raquo; (Coming Soon)
+[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate &raquo; (Coming Soon)

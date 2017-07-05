@@ -1,6 +1,6 @@
 #SymbioCSS
 
-[&laquo; CSS](./02_css.md) | [Table of Contents](../../symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)
+[&laquo; CSS](./02_css.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)
 
 # Structuring your Style Sheets
 
@@ -56,7 +56,7 @@ In the Component-specific styles section, notice how the specificity increases a
 
 This approach is analogous to ITCSS in that where ITCSS structures CSS in an inverted triangle, SymbioCSS structures it more like an inverted Christmas Tree. This allows for much more modular style sheets.
 
-Next, let's look at [building the components themselves](04 - Building Reusable Components.md).
+Next, let's look at [building the components themselves](./04_building-reusable-components.md).
 
 ---
-[&laquo; CSS](./02_css.md) | [Table of Contents](../../symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)
+[&laquo; CSS](./02_css.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)

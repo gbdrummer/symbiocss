@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; HTML](./01_html.md) | [Table of Contents](../../symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)
+[&laquo; HTML](./01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)
 
 ## How to write CSS
 
@@ -229,4 +229,4 @@ You can also then use the parent-child cascade to style "special health blog art
 The key of this approach is *context*. As your style sheet grows in length, you'll find that its complexity remains low. These patterns stay consistent and repeatable throughout.
 
 ---
-[&laquo; HTML](./01_html.md) | [Table of Contents](../../symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)
+[&laquo; HTML](./01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)
