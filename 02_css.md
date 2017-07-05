@@ -36,7 +36,7 @@ There are several important things to notice here:
 2. each CSS selector makes it clear which part of the document it refers to, and
 3. each CSS rule block is scoped to the "blog" `section` or its child `article`s through the use of contextual selector chaining.
 
-It is also important to notice that this structure creates a "CSS Component" that we can now reuse. If we wanted to display this blog or a similar one elsewhere on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
+It is also important to notice that this structure creates a reusable "CSS Component". If we wanted to display this blog or a similar one elsewhere on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
 ---
 
