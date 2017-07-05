@@ -1,6 +1,6 @@
 #SymbioCSS
 
-[&laquo; Structuring Your Style Sheets](./03_structuring-your-style-sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](./05_interfacing-with-javascript.md)
+[&laquo; Structuring Your Style Sheets](03_structuring-your-style-sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05_interfacing-with-javascript.md)
 
 # Building Reusable Components
 
@@ -361,4 +361,4 @@ This structure creates perfect internal scoping for this component. It is decept
 As the CSS specification develops, this approach will continue to work well moving forward. [CSS Nesting Module Level 3](http://tabatkins.github.io/specs/css-nesting/) will allow you to take advantage of nesting without the need for a CSS preprocessor.
 
 ---
-[&laquo; Structuring Your Style Sheets](./03_structuring-your-style-sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](./05_interfacing-with-javascript.md)
+[&laquo; Structuring Your Style Sheets](03_structuring-your-style-sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05_interfacing-with-javascript.md)
