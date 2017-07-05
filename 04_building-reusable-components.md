@@ -60,8 +60,7 @@ Next, let's think about what states we need. Let's say our design spec calls for
 
 ```HTML
 <button class="save [successful] [failed]">
-  <img class="fail icon" src="icons/warning.svg" />
-  <img class="success icon" src="icons/checkmark.svg" />
+  <div class="icon"></div>
   Save
 </button>
 ```
@@ -78,16 +77,16 @@ button.save.successful {
   background: green;
 }
 
-button.save.successful .success.icon {
-  display: inline-block;
+button.save.successful .icon {
+  background-image: url("icons/checkmark.svg");
 }
 
 button.save.failed {
   background: red;
 }
 
-button.save.failed .fail.icon {
-  display: inline-block;
+button.save.failed .icon {
+  background-image: url("icons/warning.svg");
 }
 ```
 
