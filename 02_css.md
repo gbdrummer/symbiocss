@@ -44,10 +44,10 @@ At this point, if you're skeptical that this approach will solve your CSS proble
 
 We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
-Let's say we have global styes for our`h1` and `section` tags. Our stylesheet would need to be updated like so:
+Let's say we have global styes for our`h1` and `section` tags. Our stylesheet might look like this:
 
 ```CSS
-/* Global rules */
+/* Global rules --------------------------------- */
 h1 {
 	font-weight: bold;
 }
@@ -56,7 +56,8 @@ section {
 	margin-bottom: 1em;
 }
 
-/* Component-scoped rules */
+/* Component-scoped rules ----------------------- */
+
 .blog article {
 	border: 1px solid black;
 	padding: 1em;
