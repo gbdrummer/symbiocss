@@ -36,7 +36,7 @@ There are several important things to notice here:
 2. each CSS selector makes it clear which part of the document it refers to, and
 3. each rule block is scoped to the "blog" section through the use of contextual selector chaining.
 
-It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
+It is also important to notice that this structure creates a "CSS Component" that we can now reuse. If we wanted to display this blog or a similar one elsewhere on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
 If you're skeptical right now, I get it. We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
