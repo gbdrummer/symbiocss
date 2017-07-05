@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Table of Contents](https://github.com/gbdrummer/symbiocss) | [HTML &raquo;](./symbiocss/01_html.md)
+[&laquo; Table of Contents](README.md) | [HTML &raquo;](01_html.md)
 
 # Introduction
 
