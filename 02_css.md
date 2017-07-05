@@ -44,10 +44,9 @@ At this point, if you're skeptical that this approach will solve your CSS proble
 
 We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
-Let's say we have global styes for our`h1` and `section` tags. Our stylesheet might look like this:
+Let's say we have global styes for our`h1` and `section` tags:
 
 ```CSS
-/* Global rules --------------------------------- */
 h1 {
 	font-weight: bold;
 }
@@ -55,24 +54,50 @@ h1 {
 section {
 	margin-bottom: 1em;
 }
+```
 
-/* Component-scoped rules ----------------------- */
+With these styles applied globally, we can now rewrite our blog component styles to include the missing information:
 
+```CSS
+/* Global rules --------------------------------- */
+h1 {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+/* Blog Component ------------------------------- */
 .blog article {
-	border: 1px solid black;
-	padding: 1em;
+  border: 1px solid black;
+  padding: 1em;
 }
 
 .blog article h1 {
-	color: blue;
+  color: blue;
 }
 
 .blog article .summary {
-	font-family: "Comic Sans";
+  font-family: "Comic Sans";
 }
 ```
 
-Our global styles go at the top of the style sheet, and our "component-scoped" css goes underneath. This ensures that the cascade works properly, and our more specific component-scoped css will override any of our less specific global rules. `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the color value; It doesn't re-establish the font-weight value (see CSS Rule #3 above).
+Our global styles go at the top of the stylesheet and will be applied all elements of the same type across the board. Our "component-scoped" css receives the global styles thanks to the Cascade, and then applies additional styles to the blog component while leaving the global styles untouched. 
+
+In other words, `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight.
+
+If another section of our document needs to have a green `h1`, we can do so without affecting our blog:
+
+```CSS
+.blog article h1 {
+  color: blue;
+}
+
+.other-section h1 {
+  color: green;
+}
+```
 
 The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
 
