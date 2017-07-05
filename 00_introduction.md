@@ -7,7 +7,7 @@
 SymbioCSS is a methodology for writing HTML and CSS which I (Graham Butler) have been developing since 2014.
 
 ## Why another methodology?
-In my opinion, a good HTML/CSS methodology should meet the following requirements:
+In my opinion, a good HTML/CSS methodology should produce code with the following characteristics:
 
 HTML and CSS code should:
 
@@ -16,9 +16,9 @@ HTML and CSS code should:
 3. employ consistent and repeatable patterns,
 4. be easy to read and understand by any size team.
 
-There are a number of very well-conceived methodologies out there, like [OOCSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](https://smacss.com/), and [ITCSS](http://itcss.io/). Unfortunately, despite their individual strengths, none of them satisfy all the above requirements for me.
+There are a number of very well-conceived methodologies out there, like [OOCSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](https://smacss.com/), and [ITCSS](http://itcss.io/). Unfortunately, despite their individual strengths, none of them satisfy all the above for me.
 
-Over the last few years I've been faced with the challenge of building consistent, modern responsive UIs for a large suite of applications, all built on top of a very large, very old legacy code base. This code base included a single, 10,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom had a different approach to HTML structure and naming conventions.
+Since 2014 I've been faced with the challenge of building consistent, modern responsive UIs for a large suite of applications, all built on top of a very large, very old legacy code base. This code base included a single, 10,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom had a different approach to HTML structure and naming conventions.
 
 Cleaning all this up was a daunting task to say the least, but I'm happy to say the end result is a tried-and-true approach to HTML/CSS development that nails all four of my requirements and then some.
 
