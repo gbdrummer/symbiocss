@@ -18,7 +18,7 @@ HTML and CSS code should:
 
 There are a number of very well-conceived methodologies out there, like [OOCSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](https://smacss.com/), and [ITCSS](http://itcss.io/). Unfortunately, despite their individual strengths, none of them satisfy all the above for me.
 
-Since 2014 I've been faced with the challenge of building consistent, modern responsive UIs for a large suite of applications, all built on top of a very large, very old legacy code base. This code base included a single, 10,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom had a different approach to HTML structure and naming conventions.
+Since 2014 I've been faced with the challenge of building consistent, modern responsive UIs for a large suite of applications, all built on top of a very large, very old legacy code base. This code base included a single, 10,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom had a different approach.
 
 Cleaning all this up was a daunting task to say the least, but I'm happy to say the end result is a tried-and-true approach to HTML/CSS development that nails all four of my requirements and then some.
 
