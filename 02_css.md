@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; HTML](01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
+[&laquo; How to write HTML](01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
 
 ## How to write CSS
 
@@ -233,4 +233,4 @@ The key of this approach is *context*. As your style sheet grows in length, you'
 Next: [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
 
 ---
-[&laquo; HTML](01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
+[&laquo; How to write HTML](01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
