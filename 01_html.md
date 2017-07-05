@@ -64,11 +64,11 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 </section>
 ```
 
-From looking at this HTML, we now understand that we have a section of a larger document, and that section contains articles of some kind. Each article has a heading and paragraph of text.
+From looking at this HTML, we now understand that we have a section of a larger document which contains articles of some kind. Each article has a heading and paragraph of text.
 
-What we cannot glean from looking at this HTML is that this section of our larger document is a blog. It's true that we could look inside the first `<h1>` tag and see the word "Blog," but our CSS cannot rely on the content itself to get that information. After all, our CSS will be interacting with the HTML annotations, not directly with the content.
+What we cannot glean from looking at this HTML is that this section of our larger document is a "blog." It's true that we could look inside the first `<h1>` tag and see the word "Blog," but our CSS cannot rely on the content for that information. After all, our CSS will be interacting with the HTML annotations, not directly with the content itself.
 
-In other words, our parent `section` is missing some important context. We also have not clearly defined the context of the `p` tags inside each article. Let's add the remaining context using `class` attributes:
+In other words, our parent `section` is missing important contextual information. We also have not clearly defined the context of the `p` tags inside each article. Let's add the missing context using `class` attributes:
 
 ```HTML
 <section class="blog">
@@ -94,7 +94,7 @@ Now, when we look at this HTML we understand that we have a blog, which is a sec
 
 1. We've used HTML5 semantic tags to add most of the context we needed (see HTML Rule #1 above),
 2. we used `class` attributes to add the remaining context (see HTML Rule #2 above), and
-3. we did not repeat any of this context inside our blog container as we might with a class-naming convention such as B.E.M., which would stipulate that "blog" be prepended to the articles and "summary" class, ie `<article class="blog__article">` and `<p class="blog__article__summary">`. (see HTML Rule #3 above).
+3. we did not repeat any of this context in the class names of elements inside our blog container (see HTML Rule #3 above).
 
 Next, [let's add some style to our blog](02_css.md).
 
