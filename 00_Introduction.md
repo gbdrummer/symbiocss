@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Table of Contents](/symbiocss) | [HTML &raquo;](./01_html.md)
+[&laquo; Table of Contents](../../symbiocss) | [HTML &raquo;](./01_html.md)
 
 # Introduction
 
@@ -35,4 +35,4 @@ CSS is a style sheet language, or "a language that expresses the presentation of
 Without further ado, [on to the approach!](01 - HTML.md)
 
 ---
-[&laquo; Table of Contents](./) | [HTML &raquo;](./01_html.md)
+[&laquo; Table of Contents](../../symbiocss) | [HTML &raquo;](./01_html.md)

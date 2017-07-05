@@ -1,6 +1,6 @@
 #SymbioCSS
 
-[&laquo; Structuring Your Style Sheets](03 - Structuring your Style Sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+[&laquo; Structuring Your Style Sheets](./03_structuring-your-style-sheets.md) | [Table of Contents](../../symbiocss) | [Interfacing with JavaScript &raquo;](./05_interfacing-with-javascript.md)
 
 # Building Reusable Components
 
@@ -280,27 +280,27 @@ Here, we've "reset" the specificity order a couple times within this component. 
 		.button:hover {
 			font-weight: bold;
 		}
+		
+		<Context Level 2a: "Danger Button">
+			.danger.button {
+				background-color: red;
+			}
+			
+			.danger.button:hover {
+				background-color: pink;
+			}
+		</Context Level 2a>
+		
+		<Context Level 2b: "Safety Button">
+			.safety.button {
+				background-color: green;
+			}
+			
+			.safety.button:hover {
+				background-color: lightgreen;
+			}
+		</Context Level 2b>
 	</Context Level 1>
-	
-	<Context Level 2a: "Danger Button">
-		.danger.button {
-			background-color: red;
-		}
-		
-		.danger.button:hover {
-			background-color: pink;
-		}
-	</Context Level 2a>
-	
-	<Context Level 2b: "Safety Button">
-		.safety.button {
-			background-color: green;
-		}
-		
-		.safety.button:hover {
-			background-color: lightgreen;
-		}
-	</Context Level 2b>
 	
 	/* Reset all contexts */
 	
@@ -310,9 +310,9 @@ Here, we've "reset" the specificity order a couple times within this component. 
 				display: inline;
 				margin: 0 .618em 0 0;
 			}
+			
+			<Additional Contexts />
 		</Context Level 1>
-		
-		<Additional Contexts />
 	}
 	
 	/* Additional Media Queries reset all contexts */
@@ -360,18 +360,5 @@ This structure creates perfect internal scoping for this component. It is decept
 
 As the CSS specification develops, this approach will continue to work well moving forward. [CSS Nesting Module Level 3](http://tabatkins.github.io/specs/css-nesting/) will allow you to take advantage of nesting without the need for a CSS preprocessor.
 
-
-
-<!--
-
-### Types of CSS Rules
-CSS rules can effectively be broken into two categories: Structural and Visual.
-
-Structural styles include rules that affect how the element behaves in relation to other elements in the document. Some examples of Structural CSS rules include Positioning, Box-Model, and Z-Index rules. 
-
-Visual styles include anything that affects how an element is presented without affecting its relationship to the rest of the document. Some examples include background-color, box-shadows, font-size, etc.
-
--->
-
 ---
-[&laquo; Structuring Your Style Sheets](03 - Structuring your Style Sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05 - Interfacing with JavaScript.md)
+[&laquo; Structuring Your Style Sheets](./03_structuring-your-style-sheets.md) | [Table of Contents](../../symbiocss) | [Interfacing with JavaScript &raquo;](./05_interfacing-with-javascript.md)

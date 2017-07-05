@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Building Reusable Components](04 - Building Reusable Components.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate &raquo; (Coming Soon)
+[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](../../symbiocss) | Boilerplate &raquo; (Coming Soon)
 
 # Interfacing with JavaScript
 
@@ -95,11 +95,11 @@ If we want to group the middle three sections together in columns, it would make
 
 The integrity of our content outline is unchanged, but we can now display it in any way we choose. It's best to use this technique sparingly to keep your HTML uncluttered, but it is a good way of separating elements that are semantic to the content and those that aren't/
 
- `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. (See [Structuring your Style Sheets](03 - Structuring your Style Sheets.md)).
+ `id`s should be included at the bottom of your stylesheet and should NEVER be included in contextual selectors. (See [Structuring your Style Sheets](./03_structuring-your-style-sheets.md)).
  
 That's it for now! Check back later for starter code and more examples. Happy Developing!
 
 - Graham Butler
 
 ---
-[&laquo; Building Reusable Components](04 - Building Reusable Components.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | Boilerplate &raquo; (Coming Soon)
+[&laquo; Building Reusable Components](./04_building-reusable-components.md) | [Table of Contents](../../symbiocss) | Boilerplate &raquo; (Coming Soon)

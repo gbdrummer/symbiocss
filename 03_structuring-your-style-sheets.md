@@ -1,6 +1,6 @@
 #SymbioCSS
 
-[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04 - Building Reusable Components.md)
+[&laquo; CSS](./02_css.md) | [Table of Contents](../../symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)
 
 # Structuring your Style Sheets
 
@@ -18,7 +18,7 @@ In other words, your stylesheet will look something like this:
 .hidden {
 	display: none !important;
 	visibility: hidden !important;
-	opacity: 0 !important; 
+	opacity: 0 !important;
 }
 
 .show {
@@ -59,4 +59,4 @@ This approach is analogous to ITCSS in that where ITCSS structures CSS in an inv
 Next, let's look at [building the components themselves](04 - Building Reusable Components.md).
 
 ---
-[&laquo; CSS](02 - CSS.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04 - Building Reusable Components.md)
+[&laquo; CSS](./02_css.md) | [Table of Contents](../../symbiocss) | [Building Reusable Components &raquo;](./04_building-reusable-components.md)

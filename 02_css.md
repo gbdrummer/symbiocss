@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03 - Structuring your Style Sheets.md)
+[&laquo; HTML](./01_html.md) | [Table of Contents](../../symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)
 
 ## How to write CSS
 
@@ -36,7 +36,7 @@ There are several important things to notice here:
 2. it is entirely obvious what each selector refers to in the context of the whole document just by reading it, and
 3. each element is scoped to its parent context through the use of selector chaining (see CSS Rule #1 above)
 
-It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly. 
+It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
 If you're skeptical right now, I get it. We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
@@ -229,4 +229,4 @@ You can also then use the parent-child cascade to style "special health blog art
 The key of this approach is *context*. As your style sheet grows in length, you'll find that its complexity remains low. These patterns stay consistent and repeatable throughout.
 
 ---
-[&laquo; HTML](01 - HTML.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03 - Structuring your Style Sheets.md)
+[&laquo; HTML](./01_html.md) | [Table of Contents](../../symbiocss) | [Structuring your Style Sheets &raquo;](./03_structuring-your-style-sheets.md)

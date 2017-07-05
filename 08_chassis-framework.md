@@ -1,6 +1,5 @@
-[&laquo; Previous](/) | [Table of Contents](https://github.com/gbdrummer/symbiocss)
+[&laquo; Previous](/) | [Table of Contents](../../symbiocss)
 
 ---
 
 # Chassis Framework
-
