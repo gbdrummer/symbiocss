@@ -161,7 +161,7 @@ There is also an ideal way to structure your Component-scoped CSS; While not abs
 For example, consider this basic component:
 
 ```HTML
-<a class="danger button">Enter the Danger Zone</a>
+<a class="button">Enter the Danger Zone</a>
 ```
 
 Let's say our hypothetical design specifies that this basic button should display inline with other buttons at viewport widths above 640px, and should fill the full width of the layout on smaller viewports.
@@ -169,7 +169,7 @@ Let's say our hypothetical design specifies that this basic button should displa
 To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 ```CSS
-danger.button {
+.button {
   display: block;
   margin: 0 0 1em;
   background-color: red;
@@ -178,7 +178,7 @@ danger.button {
 }
 
 @media screen and (min-width: 640px) {
-  danger.button {
+  .button {
     display: inline;
     margin: 0 1em 0 0;
   }
@@ -220,8 +220,10 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 ```CSS
 .button {
   display: block;
-  margin: 0 0 .618em;
+  margin: 0 0 1em;
+  background-color: red;
   border-radius: .382em;
+  color: white;
 }
 
 .button:hover {
