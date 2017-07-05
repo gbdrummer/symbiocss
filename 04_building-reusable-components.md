@@ -108,7 +108,7 @@ button.save.disabled {
 }
 ```
 
-The properties of this modifier will cascade to all elements of this button regardless of which state is active at a given time.
+The properties of this modifier will cascade to all elements of this button regardless of which state is active at a given time. This is because we **only applied styles that are specific to the context** of each state and variation.
 
 The final CSS for this component looks like this:
 
