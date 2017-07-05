@@ -11,9 +11,9 @@ In my opinion, a good HTML/CSS methodology should meet the following requirement
 
 HTML and CSS code should:
 
-1. be clean and semantic.
-2. be modular and composable.
-3. employ consistent and repeatable patterns.
+1. be clean and semantic,
+2. be modular and composable,
+3. employ consistent and repeatable patterns,
 4. be easy to read and understand by any size team.
 
 There are a number of very well-conceived methodologies out there, like OOCSS, SMACSS, and ITCSS. Unfortunately, despite their individual strengths, none of them meet all these requirements for me.
