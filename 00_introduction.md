@@ -7,11 +7,9 @@
 SymbioCSS is a methodology for writing HTML and CSS which I (Graham Butler) have been developing since 2014.
 
 ## Why another methodology?
-In my opinion, a good HTML/CSS methodology is one that produces code with the following characteristics:
+In my opinion, a good HTML/CSS methodology is one that produces HTML and CSS with the following characteristics:
 
-HTML and CSS code is:
-
-1. clean and semantic,
+1. Clean and semantic,
 2. modular and composable,
 3. consistent and repeatable in its patterns, and
 4. easy to read and understand by any size team.
