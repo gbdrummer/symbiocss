@@ -1,4 +1,4 @@
-#SymbioCSS
+# SymbioCSS
 
 [&laquo; Structuring Your Style Sheets](03_structuring-your-style-sheets.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Interfacing with JavaScript &raquo;](05_interfacing-with-javascript.md)
 
