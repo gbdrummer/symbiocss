@@ -158,10 +158,9 @@ This is a somewhat Object-Oriented approach to CSS. Here are just a few benefits
 1. Your style sheet will read like a list of clearly-defined references to HTML elements,
 2. each CSS rule block will apply the minimum number of style rules necessary to style its *context*,
 3. CSS selectors share style rules in the most efficient way possible (the cascade),
-4. specificity is inherently taken care of because of selector chaining,
-5. your style sheet will naturally become ordered from least-specific to most-specific (ala [ITCSS](http://itcss.io/)), and
-6. it will have the added benefit of being organized from one reusable component to the next. 
-⋅⋅6a. As a side benefit, any of these components could be abstracted into their own style sheet, or used inside a Web Component, etc.
+4. Specificity is inherently taken care of because of selector chaining,
+5. Your style sheet will naturally become ordered from least-specific to most-specific (ala [ITCSS](http://itcss.io/)),
+6. it will have the added benefit of being organized from one reusable component to the next (any of which could be abstracted into their own style sheet, or used inside a Web Component, etc.), and 
 7. the chances of conflicts between components are practically nil due to the specificity introduced by selector chaining.
 
 ## Modifiers
