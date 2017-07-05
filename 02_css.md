@@ -139,7 +139,6 @@ This blog is clearly much more simplistic than what we are tasked with developin
 </section>
 ```
 
-
 Instead of adding "health" or "sports" classes to each of our blog articles, we are taking advantage of the parent-child relationship of HTML tags to add this context (see CSS Rule #2 above). To style these new categories, we can add this CSS:
 
 ```CSS
@@ -152,9 +151,9 @@ Instead of adding "health" or "sports" classes to each of our blog articles, we 
 }
 ```
 
-This means that any article added to the "health blog" container will have a blue background, while the same article added to the "sports blog" container will have a green background. The "health" or "sports" context is *cascading* to the child elements of the container.
+Any article inside the "health blog" `section` will have a blue background, while articles inside the "sports blog" `section` will have a green background. The "health" or "sports" context *cascades* to the article tags.
 
-This is a purely Object-oriented approach to CSS. Here are just a few benefits:
+This is a somewhat Object-Oriented approach to CSS. Here are just a few benefits:
 
 1. Your style sheet reads like a list of clearly-defined references to elements in your HTML,
 2. each selector applies the minimum number of style rules necessary,
