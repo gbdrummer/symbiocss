@@ -1,16 +1,16 @@
 # SymbioCSS
-Techniques for scalable, composable & maintainable HTML/CSS
+Techniques for scalable, composable & maintainable HTML/CSS [test](http://www.google.com)
 
 ## Table of Contents
 
-1. [Introduction](symbiocss/00 - Introduction.md)
-2. [HTML](symbiocss/01 - HTML.md)
-3. [CSS](symbiocss/02 - CSS.md)
+1. [Introduction](./00_Introduction.md)
+2. [HTML](./01_HTML.md)
+3. [CSS](./02_CSS.md)
 
 ### Building UIs
-4. [Structuring your Stylesheets](symbiocss/03 - Structuring your Stylesheets.md)
-5. [Building Reusable Components](symbiocss/04 - Building Reusable Components.md)
-6. [Interfacing with JavaScript](symbiocss/05 - Interfacing with JavaScript.md)
+4. [Structuring your Stylesheets](./03_Structuring-your-Stylesheets.md)
+5. [Building Reusable Components](./04_Building-Reusable-Components.md)
+6. [Interfacing with JavaScript](./05_Interfacing-with-JavaScript.md)
 
 ### Example Code (Coming Soon!)
 7. Boilerplate
