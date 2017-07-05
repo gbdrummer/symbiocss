@@ -179,7 +179,7 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline;
+    display: inline-block;
     margin: 0 1em 0 0;
   }
 }
@@ -206,7 +206,7 @@ Let's add a hover state to the button:
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline;
+    display: inline-block;
     margin: 0 1em 0 0;
   }
 }
@@ -248,7 +248,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline;
+    display: inline-block;
     margin: 0 1em 0 0;
   }
 }
@@ -299,7 +299,7 @@ Here, we've "reset" the specificity order a couple times within this component. 
   @media screen and (min-width: 640px) {
     <Context Level 1: "Button">
       .button {
-        display: inline;
+        display: inline-block;
         margin: 0 1em 0 0;
       }
 			
@@ -344,7 +344,7 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
   }
 	
   @media screen and (min-width: 640px) {
-    display: inline;
+    display: inline-block;
     margin: 0 1em 0 0;
   }
 }
