@@ -140,38 +140,15 @@ This blog is clearly much more simplistic than what we are tasked with developin
 ```
 
 
-Instead of adding "health" or "sports" classes to each of our blog articles, we are taking advantage of the parent-child relationship of HTML tags to add this context (see CSS Rule #2 above). Hence, our CSS will look like this:
+Instead of adding "health" or "sports" classes to each of our blog articles, we are taking advantage of the parent-child relationship of HTML tags to add this context (see CSS Rule #2 above). To style these new categories, we can add this CSS:
 
 ```CSS
-/* Global rules */
-h1 {
-	font-weight: bold;
-}
-
-section {
-	margin-bottom: 1em;
-}
-
-/* Component-scoped rules */
-.blog article {
-	border: 1px solid black;
-    padding: 1em;
-}
-
-.blog article h1 {
-	color: blue;
-}
-
-.blog article .summary {
-	font-family: "Comic Sans";
-}
-
 .health.blog article {
-	background: blue;
+  background: blue;
 }
 
 .sports.blog article {
-	background: green;
+  background: green;
 }
 ```
 
