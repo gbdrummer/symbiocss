@@ -54,7 +54,7 @@ In other words, your stylesheet will look something like this:
 
 In the Component-specific styles section, notice how the specificity increases as you descend through the document, but "resets" when you move from one component to the next.
 
-This approach is analogous to ITCSS in that where ITCSS structures CSS in an inverted triangle, SymbioCSS structures it more like an inverted Christmas Tree. This allows for much more modular style sheets.
+This approach is an extension of the ITCSS concept, but instead of structuring CSS in an inverted triangle, SymbioCSS structures it more like an inverted Christmas Tree. This allows for much more modular style sheets.
 
 Next, let's look at [building the components themselves](04_building-reusable-components.md).
 
