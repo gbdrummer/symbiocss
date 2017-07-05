@@ -1,5 +1,5 @@
 # SymbioCSS
-Techniques for scalable, composable & maintainable HTML/CSS [test](http://www.google.com)
+Techniques for scalable, composable & maintainable HTML/CSS
 
 ## Table of Contents
 
