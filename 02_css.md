@@ -38,8 +38,6 @@ There are several important things to notice here:
 
 It is also important to notice that this structure creates a "CSS Component" that we can now reuse. If we wanted to display this blog or a similar one elsewhere on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
-At this point, if you're skeptical that this approach will solve your CSS problems, I get it. But read on, and you may be surprised and delighted at how this comes together into a simple, cohesive, and above all, effective, approach. 
-
 ---
 
 We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
