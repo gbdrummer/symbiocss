@@ -18,7 +18,7 @@ The basic structure of the component looks like this:
 
 ```HTML
 <{tag} class="[{variations}] {component} [{state}]" id="{javascript_hook}" {attributes}>
-	...
+  ...
 </{tag}>
 ```
 
@@ -29,17 +29,13 @@ Let's say we are tasked with creating a UI that allows the user to edit a block 
 First, we need to select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
 
 ```HTML
-<button>
-	Save
-</button>
+<button>Save</button>
 ```
 
 Now, let's come up with a name for this component. "Save Button" seems obvious. We know this component is a button thanks to the `<button>` tag, so let's use a class to add the remaining context:
 
 ```HTML
-<button class="save">
-	Save
-</button>
+<button class="save">Save</button>
 ```
 
 Let's establish our button's default properties with some CSS:
