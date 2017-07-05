@@ -8,11 +8,11 @@ Now that you are familiar with the basic approach, let's explore how powerful it
 
 To construct a component with SymbioCSS, follow these steps:
 
-1. Select an appropriate HTML tag
-2. Choose a descriptive name for the component and establish its default properties
-3. Choose descriptors for the component's states and establish their properties
-4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations
-5. Add any additional HTML attributes as necessary
+1. Select an appropriate HTML tag.
+2. Choose a descriptive name for the component and establish its default properties.
+3. Choose descriptors for the component's states and establish their properties.
+4. Choose descriptors for the component's variations and establish their properties. Then, repeat step 3 for any additional states accompanying these variations.
+5. Add any additional HTML attributes as necessary.
 
 The basic structure of the component looks like this:
 
