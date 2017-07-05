@@ -47,18 +47,6 @@ We're obviously going to have some global css we need to deal with, so let's con
 Let's say we have global styes for our`h1` and `section` tags:
 
 ```CSS
-h1 {
-	font-weight: bold;
-}
-
-section {
-	margin-bottom: 1em;
-}
-```
-
-With these styles applied globally, we can now rewrite our blog component styles to include the missing information:
-
-```CSS
 /* Global rules --------------------------------- */
 h1 {
   font-weight: bold;
@@ -67,7 +55,11 @@ h1 {
 section {
   margin-bottom: 1em;
 }
+```
 
+With these styles applied globally, we can now rewrite our blog component styles to include the missing information:
+
+```CSS
 /* Blog Component ------------------------------- */
 .blog article {
   border: 1px solid black;
