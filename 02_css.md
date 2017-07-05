@@ -230,5 +230,7 @@ Then, we can use the Cascade to style "featured health blog articles" differentl
 
 The key of this approach is *context*. As your style sheet grows in length, you'll find that its complexity remains low. These patterns stay consistent and repeatable throughout.
 
+Next: [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
+
 ---
 [&laquo; HTML](01_html.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Structuring your Style Sheets &raquo;](03_structuring-your-style-sheets.md)
