@@ -34,7 +34,7 @@ There are several important things to notice here:
 
 1. Each of these selectors reads like an English phrase,  
 2. it is obvious what part of the document is referred to by each CSS selector by simply reading them, and
-3. each rule block is scoped to its parent context through the use of contextual selector chaining.
+3. each rule block is scoped to the "blog" section through the use of contextual selector chaining.
 
 It is also important to realize that this structure has created a "component" that we can now reuse. If we wanted to add this blog to another page on our site, we'd simply need to load in this HTML template and css snippet, and the blog will be styled correctly.
 
