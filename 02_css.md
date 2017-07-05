@@ -185,44 +185,46 @@ Obviously, if any of your component-scoped CSS includes display, visibility or o
 }
 ```
 
-Most methodologies advise against using the `!important` flag, but the reasoning is usually something to the effect of "Using !important can lead to unexpected conflicts that are hard to manage." This is true in the absence of a structured approach to writing CSS, but when you follow logical patterns, this becomes a non-issue. If following the SymbioCSS approach, a global modifier class is the only case where the `!important` flag will ever need to be used. In fact, this is in line with the original intent of the `!important` flag, which was to act as a guaranteed override of document styles so that users could establish their own customized style sheet (which can be used to enlarge fonts or change colors for those with vision troubles, for example).
+Most methodologies advise against using the `!important` flag, but the reasoning is usually something to the effect of "Using !important can lead to unexpected conflicts that are hard to manage." This is true in the absence of a structured approach, but when you follow logical patterns, it becomes a non-issue. In SymbioCSS, global modifier classes are the only case where the `!important` flag is used. 
 
-In SymbioCSS, modifiers can also be scoped locally, in which case the `!important` flag is not needed. For example, let's say we want to be able to mark certain blog articles as "special". We can do so by adding a local modifier:
+In fact, this is in line with the original intent of the `!important` flag, which was to act as a guaranteed override of document styles so that users could establish their own customized style sheet (which can be used to enlarge fonts or change colors for those with vision troubles, for example).
+
+SymbioCSS modifiers can also be scoped locally, in which case the `!important` flag is not needed. For example, let's say we want to mark certain blog articles as "featured". We can do so by adding a local modifier:
 
 ```HTML
 <section class="blog">
-	<article class="special">
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
-    <article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
-    <article>
-		<h1>Article Title</h1>
-		<p class="summary">...</p>
-	</article>
+  <article class="featured">
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
+  <article>
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
+  <article>
+    <h1>Article Title</h1>
+    <p class="summary">...</p>
+  </article>
 </section>
 ```
 
 We'd then add this component-scoped CSS:
 
 ```CSS
-.blog article.special {
-	font-family: Wingdings;
+.blog article.featured {
+  font-family: Wingdings;
 }
 ```
 
-You can also then use the parent-child cascade to style "special health blog articles" differently from "special sports blog articles":
+Then, we can use the Cascade to style "featured health blog articles" differently from "special sports blog articles":
 
 ```CSS
-.health.blog article.special {
-	text-shadow: 1px 1px 2px pink;
+.health.blog article.featured {
+  text-shadow: 1px 1px 2px pink;
 }
 
-.sports.blog article.special {
-	text-shadow: 1px 1px 2px orange;
+.sports.blog article.featured {
+  text-shadow: 1px 1px 2px orange;
 }
 ```
 
