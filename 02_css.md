@@ -95,7 +95,7 @@ The net effect is that we don't have to actually think about specificity at all.
 
 ## Just in case...
 
-If you're worried that chaining selectors will degrade the performance of your CSS, you are correct. However, this has not been shown to be a problem worth worrying about in virtually any situation:
+If you're worried that chaining selectors will degrade the performance of your CSS, you are correct. However, this has been shown to be a problem not worth worrying about:
 
 [Jordan Walker of CSStricks](https://css-tricks.com/efficiently-rendering-css/) says:
 <blockquote>
