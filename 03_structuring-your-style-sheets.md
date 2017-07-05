@@ -1,8 +1,8 @@
-#SymbioCSS
+# SymbioCSS
 
 [&laquo; CSS](02_css.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [Building Reusable Components &raquo;](04_building-reusable-components.md)
 
-# Structuring your Style Sheets
+## Structuring your Style Sheets
 
 Let's examine in more detail the way a SymbioCSS style sheet is constructed:
 
