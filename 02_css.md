@@ -93,7 +93,6 @@ If another section of our document needs to have a green `h1`, we can do so with
 
 The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
 
----
 ## Just in case...
 
 If you're worried that chaining selectors will degrade the performance of your CSS, you are correct, however this has not been shown to be a problem worth worrying about in virtually any situation:
