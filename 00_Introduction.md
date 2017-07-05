@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Table of Contents](./) | [HTML &raquo;](./01_html.md)
+[&laquo; Table of Contents](/symbiocss) | [HTML &raquo;](./01_html.md)
 
 # Introduction
 
