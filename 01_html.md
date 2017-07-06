@@ -28,18 +28,18 @@ We have a basic blog. To display this document on the web, we need to add annota
 
 ```HTML
 <div>
-	<div>Blog</div>
-	<div>
-		<div>Article 1 Title</div>
-		<div>Article 1 summary</div>
-	</div>
-	<div>
-		<div>Article 2 Title</div>
-		<div>Article 2 summary</div>
-	</div>
-	<div>
-		<div>Article 3 Title</div>
-		<div>Article 3 summary</div>
+  <div>Blog</div>
+  <div>
+    <div>Article 1 Title</div>
+    <div>Article 1 summary</div>
+  </div>
+  <div>
+    <div>Article 2 Title</div>
+    <div>Article 2 summary</div>
+  </div>
+  <div>
+    <div>Article 3 Title</div>
+    <div>Article 3 summary</div>
     </div>
 </div>
 ```
@@ -48,19 +48,19 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 
 ```HTML
 <section>
-	<h1>Blog</h1>
-	<article>
-		<h1>Article 1 Title</h1>
-		<p>Article 1 summary</p>
-	</article>
-	<article>
-		<h1>Article 2 Title</h1>
-		<p>Article 2 summary</p>
-	</article>
-	<article>
-		<h1>Article 3 Title</h1>
-		<p>Article 3 summary</p>
-	</article>
+  <h1>Blog</h1>
+  <article>
+    <h1>Article 1 Title</h1>
+    <p>Article 1 summary</p>
+  </article>
+  <article>
+    <h1>Article 2 Title</h1>
+    <p>Article 2 summary</p>
+  </article>
+  <article>
+    <h1>Article 3 Title</h1>
+    <p>Article 3 summary</p>
+  </article>
 </section>
 ```
 
@@ -72,19 +72,19 @@ In other words, our parent `section` is missing important contextual information
 
 ```HTML
 <section class="blog">
-	<h1>Blog</h1>
-	<article>
-		<h1>Article 1 Title</h1>
-		<p class="summary">Article 1 summary</p>
-	</article>
-	<article>
-		<h1>Article 2 Title</h1>
-		<p class="summary">Article 2 summary</p>
-	</article>
-	<article>
-		<h1>Article 3 Title</h1>
-		<p class="summary">Article 3 summary</p>
-	</article>
+  <h1>Blog</h1>
+  <article>
+    <h1>Article 1 Title</h1>
+    <p class="summary">Article 1 summary</p>
+  </article>
+  <article>
+    <h1>Article 2 Title</h1>
+    <p class="summary">Article 2 summary</p>
+  </article>
+  <article>
+    <h1>Article 3 Title</h1>
+    <p class="summary">Article 3 summary</p>
+  </article>
 </section>
 ```
 
