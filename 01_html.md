@@ -88,7 +88,7 @@ In other words, our parent `section` is missing important contextual information
 </section>
 ```
 
-Now, when we look at this HTML we understand that we have a blog, which is a section of a larger document, and that blog contains articles, each of which has a heading and a summary paragraph. That's all we need to know!
+Now, when we look at this HTML we understand that we have a blog, which is a section of a larger document, and it contains articles, each of which has a heading and a summary paragraph. That's all we need to know!
 
 **Important Notes:**
 
