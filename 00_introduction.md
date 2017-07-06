@@ -16,7 +16,7 @@ In my opinion, a good HTML/CSS methodology is one that produces code that is:
 
 There are a number of very well-conceived methodologies out there, like [OOCSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](https://smacss.com/), and [ITCSS](http://itcss.io/). Unfortunately, despite their individual strengths, none of them satisfy all of the above for me.
 
-Since 2014 I've been presented with the challenge of building consistent, modern responsive UIs for a large suite of applications, powered by a very large, very old code base. This legacy code base included a single, 12,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom used their own methods.
+Since 2014 I've been presented with the challenge of building consistent, modern responsive UIs for a large suite of applications, powered by a very large, very old code base. This legacy code base included a single, 12,000-line css file constructed over the course of 10 years by a legion of different developers, all of whom employed their own unique approaches.
 
 Cleaning all this up was a daunting task to say the least, but I'm happy to say the end result is a tried-and-true approach to HTML/CSS development that nails all four of my requirements and then some.
 
