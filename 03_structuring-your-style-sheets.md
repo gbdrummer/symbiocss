@@ -16,15 +16,9 @@ In other words, your stylesheet will look something like this:
 /***** Global utility classes *****/
 
 .hidden {
-	display: none !important;
-	visibility: hidden !important;
-	opacity: 0 !important;
-}
-
-.show {
-	display: block !important;
-	visibility: visible !important;
-	opacity: 1 !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /***** Component-specific styles *****/
@@ -32,22 +26,21 @@ In other words, your stylesheet will look something like this:
 /* Component 1 Context */
 .component-1 {...}
 
-.component-1 .sub-component {...}
+.component-1 .child {...}
 
-.component-1.modifier .sub-component {...}
+.component-1.modifier .child {...}
 
 /* Component 2 Context */
 .component-2 {...}
 
-.component-2 .sub-component {...}
+.component-2 .child {...}
 
-.component-2.modifier .sub-component {...}
+.component-2.modifier .child {...}
 
 /***** Singletons *****/
-/* Any ids in your project should be styled here. More on this later. */
 
-#component-1_flex_wrapper {
-	display: flex;
+main {
+  display: flex;
 }
 
 ```
