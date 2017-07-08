@@ -301,8 +301,6 @@ Here, we've "reset" the specificity level a couple times within this component. 
     </Context Level 2b>
   </Context Level 1>
 	
-  /* Reset all contexts */
-	
   @media screen and (min-width: 640px) {
     <Context Level 1: "Button">
       .button {
@@ -313,8 +311,6 @@ Here, we've "reset" the specificity level a couple times within this component. 
       <Additional Contexts />
     </Context Level 1>
   }
-	
-  /* Additional Media Queries reset all contexts */
 
 </Component Context>
 
