@@ -40,7 +40,7 @@ We have a basic blog. To display this document on the web, we need to add annota
   <div>
     <div>Article 3 Title</div>
     <div>Article 3 summary</div>
-    </div>
+  </div>
 </div>
 ```
 
