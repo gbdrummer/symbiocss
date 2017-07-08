@@ -97,7 +97,7 @@ Now, all we have to do to change the state of this button is add classes "succes
 Now let's say we want to create a variation of this component. Let's add a "disabled" local modifier:
 
 ```HTML
-<button class="[disable] save [successful] [failed]">
+<button class="[disabled] save [successful] [failed]">
   <div class="icon"></div>
   Save
 </button>
