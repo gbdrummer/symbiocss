@@ -78,10 +78,12 @@ button.save.successful {
 }
 
 button.save.successful .icon {
+  display: block;
   background-image: url("icons/checkmark.svg");
 }
 
 button.save.failed {
+  display: block;
   background: red;
 }
 
