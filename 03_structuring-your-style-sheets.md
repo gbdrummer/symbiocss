@@ -13,7 +13,7 @@ In SymbioCSS, rulesets are arranged from least specific to most specific, as in 
 In other words, your stylesheet will look something like this:
 
 ```CSS
-/***** Global utility classes *****/
+/***** Global styles *****/
 
 .hidden {
   display: none !important;
