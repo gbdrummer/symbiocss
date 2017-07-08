@@ -216,7 +216,7 @@ We'd then add this component-scoped CSS:
 }
 ```
 
-Then, we can use the Cascade to style "featured health blog articles" differently from "special sports blog articles":
+Then, we can use Specificity to style "featured health blog articles" differently from "featured sports blog articles":
 
 ```CSS
 .health.blog article.featured {
