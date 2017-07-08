@@ -138,6 +138,7 @@ button.save.successful {
 }
 
 button.save.successful .icon {
+  display: inline-block;
   background-image: url("icons/checkmark.svg");
 }
 
@@ -146,11 +147,13 @@ button.save.failed {
 }
 
 button.save.failed .icon {
+  display: inline-block;
   background-image: url("icons/warning.svg");
 }
 
 button.save.disabled {
-  font-family: cursive;
+  opacity: .382;
+  pointer-events: none;
 }
 ```
 
