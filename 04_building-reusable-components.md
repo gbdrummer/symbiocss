@@ -83,11 +83,11 @@ button.save.successful .icon {
 }
 
 button.save.failed {
-  display: inline-block;
   background: red;
 }
 
 button.save.failed .icon {
+  display: inline-block;
   background-image: url("icons/warning.svg");
 }
 ```
