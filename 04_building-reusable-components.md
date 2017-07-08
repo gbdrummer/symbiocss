@@ -47,7 +47,7 @@ button.save {
   align-items: center;
     
   padding: 0 1em;
-  line-height: 1.618em;
+  line-height: 1.618;
     
   background: blue;
   color: white;
