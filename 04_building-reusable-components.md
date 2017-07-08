@@ -322,11 +322,12 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 .button {
   display: block;
   margin: 0 0 1em;
-  background-color: red;
+  background-color: black;
   border-radius: .382em;
   color: white;
 	
   &:hover {
+    background-color: grey;
     font-weight: bold;
   }
 	
