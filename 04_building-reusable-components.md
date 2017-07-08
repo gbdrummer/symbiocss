@@ -177,7 +177,7 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 .button {
   display: block;
   margin: 0 0 1em;
-  background-color: red;
+  background-color: black;
   border-radius: .382em;
   color: white;
 }
@@ -199,14 +199,14 @@ Let's add a hover state to the button:
 .button {
   display: block;
   margin: 0 0 1em;
-  background-color: red;
+  background-color: black;
   border-radius: .382em;
   color: white;
 }
 
 .button:hover {
   font-weight: bold;
-  background-color: pink;
+  background-color: grey;
 }
 
 @media screen and (min-width: 640px) {
@@ -226,12 +226,13 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 .button {
   display: block;
   margin: 0 0 1em;
-  background-color: red;
+  background-color: black;
   border-radius: .382em;
   color: white;
 }
 
 .button:hover {
+  background-color: grey;
   font-weight: bold;
 }
 
