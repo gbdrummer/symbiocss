@@ -270,12 +270,13 @@ Here, we've "reset" the specificity level a couple times within this component. 
     .button {
       display: block;
       margin: 0 0 1em;
-      background-color: red;
+      background-color: black;
       border-radius: .382em;
       color: white;
     }
 	
     .button:hover {
+      background-color: grey;
       font-weight: bold;
     }
 		
