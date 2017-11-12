@@ -56,7 +56,7 @@ section {
 }
 ```
 
-With these styles applied globally, we can now rewrite our blog component styles to include the missing information:
+With these styles applied globally, we can now rewrite our blog component styles to include the style information not covered by the global styles:
 
 ```CSS
 /* Blog Component ------------------------------- */
