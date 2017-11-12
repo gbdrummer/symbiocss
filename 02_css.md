@@ -79,7 +79,7 @@ Our global styles go at the top of the stylesheet and will be applied to all `h1
 
 In other words, `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight property.
 
-If another section of our document needs to have a green `h1`, we can do so without affecting our blog:
+If another section of our document needs to have a green `h1`, we can make it happen without affecting our blog:
 
 ```CSS
 .blog article h1 {
