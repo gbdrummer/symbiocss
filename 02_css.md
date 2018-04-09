@@ -91,6 +91,8 @@ If another section of our document needs to have a green `h1`, we can make it ha
 }
 ```
 
+`h1` tags inside `.other-section` will also inherit the `font-weight: bold;` declaration from the global `h1` styles.
+
 The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
 
 ## Just in case...
