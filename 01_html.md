@@ -74,15 +74,15 @@ In other words, our parent `section` is missing important contextual information
 <section class="blog">
   <h1>Blog</h1>
   <article>
-    <h1>Article 1 Title</h1>
+    <h2>Article 1 Title</h2>
     <p class="summary">Article 1 summary</p>
   </article>
   <article>
-    <h1>Article 2 Title</h1>
+    <h2>Article 2 Title</h2>
     <p class="summary">Article 2 summary</p>
   </article>
   <article>
-    <h1>Article 3 Title</h1>
+    <h2>Article 3 Title</h2>
     <p class="summary">Article 3 summary</p>
   </article>
 </section>
