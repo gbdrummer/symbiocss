@@ -157,6 +157,8 @@ button.save.disabled {
 }
 ```
 
+The `.disabled` styles are placed last so that, due to the Cascade, will override the `.sucessful` and `.failed` styles if they should include properties also applied by `.disabled`. When two rules have the same Specificity level, the later rule will always win out over the earlier one. 
+
 This component can now be used anywhere! This structure is applicable to any form of componentization; React, Angular, Web Components, whatever you may be using, the built-in scoping of this structure will work. When you structure your entire project this way, you may be surprised at how it just simply works, with no unexpected conflicts. And you get the added benefit of HTML and CSS that are clean, semantic, and easy to understand by a large team of developers.
 
 ## Standardizing
