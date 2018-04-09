@@ -157,7 +157,7 @@ Any article inside the "health blog" `section` will have a blue background, whil
 
 This is a somewhat Object-Oriented approach to CSS. Here are just a few benefits:
 
-1. Your style sheet will read like a list of clearly-defined references to HTML elements,
+1. Your style sheet will read like a list of clearly-defined references to portions of your UI and their corresponding HTML elements,
 2. each CSS rule block will apply the minimum number of style rules necessary to style its *context*,
 3. CSS selectors share style rules in the most efficient way possible (the cascade),
 4. Specificity is inherently taken care of because of selector chaining,
