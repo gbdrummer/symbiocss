@@ -20,7 +20,7 @@ Here are some basic styles for our blog:
   padding: 1em;
 }
 
-.blog article h1 {
+.blog article h2 {
   font-weight: bold;
   color: blue;
 }
@@ -42,12 +42,12 @@ It is also important to notice that this structure creates a reusable "CSS Compo
 
 We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
-Let's say we have global styes for our`h1` and `section` tags:
+Let's say we have global styes for our`h2` and `section` tags:
 
 ```CSS
 /* Global rules --------------------------------- */
 
-h1 {
+h2 {
   font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ With these styles applied globally, we can now rewrite our blog component styles
   padding: 1em;
 }
 
-.blog article h1 {
+.blog article h2 {
   color: blue;
 }
 
@@ -75,23 +75,23 @@ With these styles applied globally, we can now rewrite our blog component styles
 }
 ```
 
-Our global styles go at the top of the stylesheet and will be applied to all `h1` and `section` elements across the board. Our "component-scoped" css receives the global styles thanks to the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade), and then applies additional styles to the blog component, leaving the global styles untouched thanks to [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). 
+Our global styles go at the top of the stylesheet and will be applied to all `h2` and `section` elements across the board. Our "component-scoped" css receives the global styles thanks to the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade), and then applies additional styles to the blog component, leaving the global styles untouched thanks to [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). 
 
-In other words, `.blog article h1` effectively *extends* `h1` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight property.
+In other words, `.blog article h2` effectively *extends* `h2` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight property.
 
-If another section of our document needs to have a green `h1`, we can make it happen without affecting our blog:
+If another section of our document needs to have a green `h2`, we can make it happen without affecting our blog:
 
 ```CSS
-.blog article h1 {
+.blog article h2 {
   color: blue;
 }
 
-.other-section h1 {
+.other-section h2 {
   color: green;
 }
 ```
 
-`h1` tags inside `.other-section` will also inherit the `font-weight: bold;` declaration from the global `h1` styles.
+`h2` tags inside `.other-section` will also inherit the `font-weight: bold;` declaration from the global `h2` styles.
 
 The net effect is that we don't have to actually think about specificity at all. It is taken care of thanks to the scoping we've added to our selectors via chaining (see CSS Rule #1 above).
 
@@ -124,18 +124,18 @@ This blog is clearly much more simplistic than what we are tasked with developin
 ```HTML
 <section class="health blog">
   <article>
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
 </section>
 
 <section class="sports blog">
   <article>
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
   <article>
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
 </section>
@@ -196,15 +196,15 @@ SymbioCSS modifiers can also be scoped locally, in which case the `!important` f
 ```HTML
 <section class="blog">
   <article class="featured">
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
   <article>
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
   <article>
-    <h1>Article Title</h1>
+    <h2>Article Title</h2>
     <p class="summary">...</p>
   </article>
 </section>
