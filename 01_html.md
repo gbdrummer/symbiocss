@@ -50,15 +50,15 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 <section>
   <h1>Blog</h1>
   <article>
-    <h1>Article 1 Title</h1>
+    <h2>Article 1 Title</h2>
     <p>Article 1 summary</p>
   </article>
   <article>
-    <h1>Article 2 Title</h1>
+    <h2>Article 2 Title</h2>
     <p>Article 2 summary</p>
   </article>
   <article>
-    <h1>Article 3 Title</h1>
+    <h2>Article 3 Title</h2>
     <p>Article 3 summary</p>
   </article>
 </section>
