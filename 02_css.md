@@ -187,7 +187,7 @@ Obviously, if any of your component-scoped CSS includes display, visibility or o
 }
 ```
 
-Most methodologies advise against using the `!important` flag, but the reasoning is usually something to the effect of "Using !important can lead to unexpected conflicts that are hard to manage." This is true in the absence of a structured approach, but when you follow logical patterns, it becomes a non-issue. In SymbioCSS, global modifier classes are the only case where the `!important` flag is needed. 
+Most methodologies advise against using the `!important` flag, but the reasoning is usually something to the effect of "Using !important can lead to unexpected conflicts that are hard to manage." This is true in the absence of a structured approach, but when you follow logical patterns, it becomes a non-issue. In SymbioCSS, global modifier classes are the only case in which the `!important` flag is needed. 
 
 In fact, this is in line with the original intent of the `!important` flag, which was to act as a guaranteed override of document styles so that users could establish their own customized style sheet (which can be used to enlarge fonts or change colors for those with vision troubles, for example).
 
