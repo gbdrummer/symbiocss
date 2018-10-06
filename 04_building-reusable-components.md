@@ -24,7 +24,7 @@ The basic structure of the component looks like this:
 
 Here's a simple example:
 
-Let's say we are tasked with creating a UI that allows the user to edit a block of text. At the bottom, we have a "Save" button which will update in response to whether or not the save operation was successful.
+Let's say we are tasked with creating a UI that allows the user to edit a block of text. At the bottom, we need a "Save" button which will update in response to whether or not the save operation was successful.
 
 First, we need to select an appropriate tag. Because this button does not redirect users to a new document or section of the current document, an `<a>` tag is not appropriate, so let's go with a `<button>` instead:
 
