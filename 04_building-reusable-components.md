@@ -46,8 +46,7 @@ button.save {
   justify-content: center;
   align-items: center;
     
-  padding: 0 1em;
-  line-height: 1.618;
+  padding: .382em 1em;
     
   background: blue;
   color: white;
@@ -120,8 +119,7 @@ button.save {
   justify-content: center;
   align-items: center;
   
-  padding: 0 1em;
-  line-height: 1.618em;
+  padding: .382em 1em;
   
   background: blue;
   color: white;
