@@ -28,13 +28,13 @@ The second scenario is much better. It is clear which element of the UI is being
 Instead, `id`s are the perfect candidate for interfacing with JavaScript. For example:
 
 ```HTML
-<input id="first_name_input" name="first-name" type="text">
+<input id="first-name_input" name="first-name" type="text">
 ```
 
 The `id` fully describes exactly what the element is: an input that receives the data "first name." You can then easily target and manipulate this element with JavaScript:
 
 ```JS
-document.getElementById('first_name_input')
+document.getElementById('first-name_input')
 ```
 
 ---
