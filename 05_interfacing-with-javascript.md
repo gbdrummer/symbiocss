@@ -23,7 +23,7 @@ The second scenario is much better. It is clear which element of the UI is being
 
 **If you've been following our News Articles example, you may be wondering "where are all the id's?"**
 
-`id`s have a place in SymbioCSS, but not for styling. `id`s are meant to provide direct access to a specific DOM element. To accomplish this, they are granted a much higher degree of specificity than class or tag selectors. However, the amount of extra specificity granted is **arbitrary**. As a result they can cause a lot of specificity problems when combined with other types of selectors. It is much easier to simply avoid using them for styling.
+`id`s have a place in SymbioCSS, but not for styling. `id`s are meant to provide direct access to a specific DOM element. To accomplish this, they are granted a much higher degree of specificity than class or tag selectors. However, the amount of extra specificity granted is **arbitrary**. As a result, `id`s can cause a lot of specificity problems when combined with other types of selectors. It is much easier to simply avoid using them for styling.
 
 Instead, `id`s are the perfect candidate for interfacing with JavaScript. For example:
 
