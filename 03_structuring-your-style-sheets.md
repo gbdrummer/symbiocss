@@ -8,7 +8,7 @@ Let's examine in more detail the way a SymbioCSS style sheet is constructed:
 
 CSS documents should be arranged by two criteria: Specificity and Component Context.
 
-In SymbioCSS, rulesets are arranged from least specific to most specific, as in [ITCSS](http://itcss.io/). However, it is broken down a bit further. Rather than structuring your entire stylesheet from least-specific to most-specific, SymbioCSS recommends breaking it up into components and applying the ITCSS approach to specificity to those. This way you can organize your CSS in chunks instead of one monolithic stylesheet.
+In SymbioCSS, rulesets are arranged from least specific to most specific, as in [ITCSS](http://itcss.io/). However, it is broken down a bit further. Rather than structuring your entire stylesheet from least-specific to most-specific, SymbioCSS recommends breaking it up into components and applying the ITCSS approach to those. This way you can organize your CSS in chunks instead of one monolithic stylesheet.
 
 In other words, your stylesheet will look something like this:
 
