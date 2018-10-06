@@ -1,6 +1,6 @@
 # SymbioCSS
 
-[&laquo; Introduction](README.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [How to write CSS &raquo;](02_css.md)
+[Table of Contents](https://github.com/gbdrummer/symbiocss) | [How to write CSS &raquo;](02_css.md)
 
 ## How to write HTML
 
@@ -99,4 +99,4 @@ Now, when we look at this HTML we understand that we have a blog, which is a sec
 Next, [let's add some style to our blog](02_css.md).
 
 ---
-[&laquo; Introduction](README.md) | [Table of Contents](https://github.com/gbdrummer/symbiocss) | [How to write CSS &raquo;](02_css.md)
+[Table of Contents](https://github.com/gbdrummer/symbiocss) | [How to write CSS &raquo;](02_css.md)
