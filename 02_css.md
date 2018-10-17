@@ -6,7 +6,7 @@
 
 1. Use contextual and chained selectors,
 2. use the parent-child relationship of the HTML elements to create scoping, and
-3. once you have established a context for the elements in your document, only add styles that are specific to that context.
+3. once you have established a styling context for the elements in your document, only add styles that are specific to that context.
 
 Here are some basic styles for our blog:
 
@@ -40,7 +40,7 @@ It is also important to notice that this structure creates a reusable "CSS Compo
 
 ---
 
-Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
+Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a styling context for the elements in your document, only add styles that are specific to that context."**
 
 Let's say we have global styes for `h2`, `section` and `article` tags:
 
