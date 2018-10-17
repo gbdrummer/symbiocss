@@ -180,7 +180,7 @@ A natural question at this point would be "What am I supposed to do if I need to
 }
 ```
 
-Obviously, if any of your component-scoped CSS includes display, visibility or opacity rules, this class will not work as intended. Thankfully, CSS provides us with a simple workaround:
+Obviously, if any of your component-scoped CSS includes display, visibility or opacity rules, this class will not work as intended because it will be overridden. Thankfully, CSS provides us with a simple workaround:
 
 ```CSS
 .hidden {
