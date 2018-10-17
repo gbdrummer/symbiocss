@@ -42,7 +42,7 @@ It is also important to notice that this structure creates a reusable "CSS Compo
 
 Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
-Let's say we have global styes for `h2` and `section` tags:
+Let's say we have global styes for `h2`, `section` and `article` tags:
 
 ```CSS
 /* Global rules --------------------------------- */
@@ -54,6 +54,10 @@ h2 {
 section {
   margin-bottom: 1em;
 }
+
+article {
+  padding: 1em;
+}
 ```
 
 With these styles applied globally, we can now rewrite our blog component styles to include only the style information not covered by the global styles:
@@ -63,7 +67,6 @@ With these styles applied globally, we can now rewrite our blog component styles
 
 .blog article {
   border: 1px solid black;
-  padding: 1em;
 }
 
 .blog article h2 {
@@ -75,9 +78,9 @@ With these styles applied globally, we can now rewrite our blog component styles
 }
 ```
 
-Our global styles go at the top of the stylesheet and will be applied to all `h2` and `section` elements across the board. Our "component-scoped" css receives the global styles thanks to the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade), and then applies additional styles to the blog component, leaving the global styles untouched thanks to [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). 
+Our global styles go at the top of the stylesheet and will be applied to all `h2`, `section` and `article` elements across the board. Our "component-scoped" css receives the global styles thanks to the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade), and then applies its own additional styles, leaving the global styles untouched thanks to [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). 
 
-In other words, `.blog article h2` effectively *extends* `h2` with its own styles, but only adds the `color: blue;` declaration; It doesn't re-establish the font-weight property.
+In other words, `.blog article` is a component that effectively *extends* `article` with its own styles, but only adds the `border` declaration; It doesn't re-establish the `padding` property.
 
 If another section of our document needs to have a green `h2`, we can make it happen without affecting our blog:
 
