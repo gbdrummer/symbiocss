@@ -45,9 +45,7 @@ button.save {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-    
   padding: .382em 1em;
-    
   background: blue;
   color: white;
 }
@@ -77,7 +75,7 @@ button.save.successful {
 }
 
 button.save.successful .icon {
-  display: inline-block;
+  display: block;
   background-image: url("icons/checkmark.svg");
 }
 
@@ -86,7 +84,7 @@ button.save.failed {
 }
 
 button.save.failed .icon {
-  display: inline-block;
+  display: block;
   background-image: url("icons/warning.svg");
 }
 ```
@@ -136,7 +134,7 @@ button.save.successful {
 }
 
 button.save.successful .icon {
-  display: inline-block;
+  display: block;
   background-image: url("icons/checkmark.svg");
 }
 
@@ -145,7 +143,7 @@ button.save.failed {
 }
 
 button.save.failed .icon {
-  display: inline-block;
+  display: block;
   background-image: url("icons/warning.svg");
 }
 
@@ -175,7 +173,7 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 ```CSS
 .button {
-  display: block;
+  display: flex;
   margin: 0 0 1em;
   background-color: black;
   border-radius: .382em;
@@ -184,7 +182,7 @@ To accomplish this, the ideal way of structuring the CSS would be as follows:
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 1em 0 0;
   }
 }
@@ -197,7 +195,7 @@ Let's add a hover state to the button:
 
 ```CSS
 .button {
-  display: block;
+  display: flex;
   margin: 0 0 1em;
   background-color: black;
   border-radius: .382em;
@@ -211,7 +209,7 @@ Let's add a hover state to the button:
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 1em 0 0;
   }
 }
@@ -224,7 +222,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 ```CSS
 .button {
-  display: block;
+  display: flex;
   margin: 0 0 1em;
   background-color: black;
   border-radius: .382em;
@@ -254,7 +252,7 @@ Let's also say we have two versions of this button, a "danger" button and a "saf
 
 @media screen and (min-width: 640px) {
   .button {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 1em 0 0;
   }
 }
@@ -268,7 +266,7 @@ Here, we've "reset" the specificity level a couple times within this component. 
 
   <Context Level 1: "Button">
     .button {
-      display: block;
+      display: flex;
       margin: 0 0 1em;
       background-color: black;
       border-radius: .382em;
@@ -304,7 +302,7 @@ Here, we've "reset" the specificity level a couple times within this component. 
   @media screen and (min-width: 640px) {
     <Context Level 1: "Button">
       .button {
-        display: inline-block;
+        display: inline-flex;
         margin: 0 1em 0 0;
       }
 			
@@ -320,7 +318,7 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
 
 ```SCSS
 .button {
-  display: block;
+  display: flex;
   margin: 0 0 1em;
   background-color: black;
   border-radius: .382em;
@@ -348,7 +346,7 @@ This structure also readily applies to CSS preprocessors that allow for nesting 
   }
 	
   @media screen and (min-width: 640px) {
-    display: inline-block;
+    display: inline-flex;
     margin: 0 1em 0 0;
   }
 }
