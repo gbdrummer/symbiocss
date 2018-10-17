@@ -40,9 +40,9 @@ It is also important to notice that this structure creates a reusable "CSS Compo
 
 ---
 
-We're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
+Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a context for the elements in your document, only add styles that are specific to that context."**
 
-Let's say we have global styes for our`h2` and `section` tags:
+Let's say we have global styes for `h2` and `section` tags:
 
 ```CSS
 /* Global rules --------------------------------- */
@@ -56,7 +56,7 @@ section {
 }
 ```
 
-With these styles applied globally, we can now rewrite our blog component styles to include the style information not covered by the global styles:
+With these styles applied globally, we can now rewrite our blog component styles to include only the style information not covered by the global styles:
 
 ```CSS
 /* Blog Component ------------------------------- */
