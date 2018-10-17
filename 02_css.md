@@ -156,7 +156,7 @@ Instead of adding "health" or "sports" classes to each of our blog articles, we 
 }
 ```
 
-Any article inside the "health blog" `section` will have a blue background, while articles inside the "sports blog" `section` will have a green background. The "health" or "sports" context *cascades* to the article tags.
+Any article inside the "health blog" `section` will have a blue background, while articles inside the "sports blog" `section` will have a green background. The "health" or "sports" context *cascades* to the article tags while creating scope. No articles outside of the "health" or "sports" context will be affected.
 
 This is a somewhat Object-Oriented approach to CSS. Here are just a few benefits:
 
