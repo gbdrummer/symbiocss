@@ -40,7 +40,7 @@ It is also important to notice that this structure creates a reusable "CSS Compo
 
 ---
 
-Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a styling context for the elements in your document, only add styles that are specific to that context."**
+Now, we're obviously going to have some global css we need to deal with, so let's consider CSS Rule #3 above: **"Once you have established a styling context for the elements in your document, only add styles that are relevant to that context."**
 
 Let's say we have global styes for `h2`, `section` and `article` tags:
 
