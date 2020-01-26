@@ -50,6 +50,14 @@ h1, h2, h3 {
 .component-2 .child {...}
 
 .component-2.modifier .child {...}
+
+
+/* Component 3 Context */
+.component-3 {...}
+
+.component-3 .child {...}
+
+.component-3.modifier .child {...}
 ```
 
 In the Component-specific styles section, notice how the specificity increases as you descend through the document, but "resets" when you move from one component to the next.
