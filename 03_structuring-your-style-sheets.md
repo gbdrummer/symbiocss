@@ -19,6 +19,10 @@ html {
   font-family: 'Comic Sans';
 }
 
+main {
+  display: flex;
+}
+
 h1, h2, h3 {
   font-weight: bold;
 }
@@ -46,13 +50,6 @@ h1, h2, h3 {
 .component-2 .child {...}
 
 .component-2.modifier .child {...}
-
-/***** Singletons *****/
-
-main {
-  display: flex;
-}
-
 ```
 
 In the Component-specific styles section, notice how the specificity increases as you descend through the document, but "resets" when you move from one component to the next.
