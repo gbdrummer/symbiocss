@@ -66,7 +66,7 @@ OK, we've laid out a basic structure for this document. This would certainly wor
 
 From looking at this HTML, we now understand that we have a section of a larger document which contains articles of some kind. Each article has a heading and paragraph of text.
 
-What we cannot glean from looking at this HTML is that this section of our larger document is a "blog." It's true that we could look inside the first `<h1>` tag and see the word "Blog," but our CSS cannot rely on the content for that information. After all, our CSS will be interacting with the HTML annotations, not directly with the content itself.
+What we cannot glean from looking at this HTML is that this section of our larger document is a "blog." It's true that we could look inside the first `<h1>` tag and see the word "Blog," but our CSS cannot rely on the text content for that information. After all, our CSS will be interacting with the HTML annotations, not directly with the content itself.
 
 In other words, our parent `section` is missing important contextual information. We also have not clearly defined the context of the `p` tags inside each article. Let's add the missing context using `class` attributes:
 
