@@ -15,6 +15,16 @@ In other words, your stylesheet will look something like this:
 ```CSS
 /***** Global styles *****/
 
+html {
+  font-family: 'Comic Sans';
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/***** Global Modifiers *****/
+
 .hidden {
   display: none !important;
   visibility: hidden !important;
