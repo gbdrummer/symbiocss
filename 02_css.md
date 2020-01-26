@@ -6,7 +6,7 @@
 
 1. Use contextual and chained selectors,
 2. use the parent-child relationship of the HTML elements to create scoping, and
-3. once you have established a styling context for the elements in your document, only add styles that are specific to that context.
+3. once you have established a styling context for the elements in your document, only add styles that are relevant to that context.
 
 Here are some basic styles for our blog:
 
