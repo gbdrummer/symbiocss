@@ -39,8 +39,3 @@ Without further ado, on to the approach!
 3. [Structuring your Stylesheets](./03_structuring-your-style-sheets.md)
 4. [Building Reusable Components](./04_building-reusable-components.md)
 5. [Interfacing with JavaScript](./05_interfacing-with-javascript.md)
-
-### Example Code (Coming Soon!)
-6. Boilerplate
-7. A Basic Website
-8. Chassis Framework
