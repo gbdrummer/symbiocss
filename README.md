@@ -1,5 +1,7 @@
 # SymbioCSS
 
+> This repo is getting a bit long in the tooth, but I think there are still some valid ideas to be found in it. So, I'm leaving it here for anyone who may find it useful as a learning tool.
+
 SymbioCSS is a methodology for writing scalable, composable and maintainable HTML and CSS which I (Graham Butler) have been developing since 2014.
 
 ## Why another methodology?
